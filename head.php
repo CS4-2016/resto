@@ -10,6 +10,10 @@
         <!-- Font Awesome -->
         <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
         
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/petit.css">
+        <link rel="stylesheet" href="fonts/rogue.css">
+
         <!-- Individual Team member CSS -->
         <link rel="stylesheet" href="css/style_alec.css">
         <link rel="stylesheet" href="css/style_andrew.css">

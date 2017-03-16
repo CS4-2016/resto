@@ -1,0 +1,82 @@
+/* COLORS */
+/* DARKER #e6b800 */
+/* LIGHTER #ffcc00 */
+
+.btn-login{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    border:0;
+    background-color: #e6b800;
+    color:white;
+}
+
+.btn-login:hover{
+    background-color: #ffcc00;
+}
+
+.login-banner{
+    height: 90px;
+    width: auto;
+}
+
+.login-header{
+    position: relative;
+    width:338px;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.login-wrapper{
+    position:relative;
+    top:calc(20%);
+}
+
+.login-text-box{
+    text-align:center;
+}
+
+.login-footer{
+    margin-top: 160px;
+    text-align: center;
+    font-size: 85%;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+.login-password-text-box{
+    position:relative;
+}
+
+.show-off, .show-on{
+    position:absolute;
+    font-size:19px;
+    top:171px;
+    right: 30px;
+}
+
+.show-off:hover, .show-on:hover{
+    cursor: pointer;
+}
+
+.show-on{
+    color: #e6b800;
+}
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
