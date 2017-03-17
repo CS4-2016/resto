@@ -80,3 +80,120 @@
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
+.background-img-table{
+    height:100%;
+    width: 100%;
+}
+
+.el-page-header{
+    padding-top:30px;
+    width:100%;
+    height: 60px;
+    color:white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+    text-align: center;
+    margin-top:0px;
+    margin-bottom: 25px;
+}
+
+.table-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; /* or space-around */
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.el-table-page{
+    background-image: url(../img/pexels-photo-179130.jpeg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.el-img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.table-reserved{
+    background-color: lightblue;
+}
+
+.table-unoccupied{
+    background-color: bisque;
+}
+
+.table-occupied{
+    background-color: lightcoral;
+}
+
+.el-nav{
+    background-color: #e6b800;
+    width:100%;
+    height: 60px;
+}
+
+.el-logo-nav img{
+    margin-top:5px;
+    margin-left:10px;
+    height:50px;
+    width:auto;
+}
+
+.el-user-nav{
+    float:right;
+    color:white;
+    font-size: 18px;
+    margin-top: 18px;
+    margin-right: 15px;
+}
+
+.table-status-select {
+    font-size: 20px;
+    text-align:center;
+    width:100%;
+    margin-bottom: 20px;
+}
+
+#header-drop-down{
+    color:black;
+    list-style:none;
+    z-index: 1000;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    background-color:white;
+    padding:0px;
+    position: absolute;
+    right: 10px;
+}
+#header-drop-down li{
+    border: 1px solid rgba(0,0,0,.15);
+    padding:10px 20px;
+}
+
+#header-drop-down li:last-of-type{
+    border-top: none; 
+}
+
+#header-drop-down li a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+#header-drop-down li:hover{
+    background-color: #e6b800;
+}
+
+#header-drop-down li:hover a{
+    color: white;
+}
