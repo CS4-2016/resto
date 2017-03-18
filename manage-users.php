@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="height:100%;">
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Flexbox Admin Template</title>
@@ -33,24 +33,21 @@
 
     <div class="content-wrapper">
         <div class="content-header">
-            <h1>Manage Menu</h1>
+            <h1>Manage Users</h1>
         </div>
             <div class="flex-container">
               <div class="flex-item">
                   <div class="header">
-                      Category
+                      Add Users
                   </div>
-              </div>
-                <div class="flex-item">
-                    <div class="header">Dish</div>
-                </div>
-              <div class="flex-item1"></div>  
+              </div>  
+              <div class="flex-information">
+                  <div class="header">
+                      Add Users
+                  </div>
+              </div> 
             </div>
     </div>
-    
-
 </div>
-   
-  
 </body>
 </html>

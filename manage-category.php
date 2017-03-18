@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html style="height:100%;">
 <head>
   <meta charset="UTF-8">
   <title>Flexbox Admin Template</title>
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style_godfrey.css">
 </head>
 
-<body>
+<body style="height:100%;">
   <div class="wrapper">
 
   <nav>
