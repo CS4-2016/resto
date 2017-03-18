@@ -7,9 +7,12 @@
     <head>
         <?php require_once("head.php"); ?>      
     </head>
+        <nav class="nav-resto">
+            <img src="img/el-logo.PNG" class="table-logo-resto">
+        </nav>
 
     <div class="table-respo">
-        <span class="resto-tables-span">   
+        <span class="resto-tables-span occupied">   
             1
             <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
@@ -19,13 +22,14 @@
             </span>
         </span>
         <span class="resto-tables-span">
-            1<span class="span-img">
+            2
+            <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">
             </span>
         </span>        
         <span class="resto-tables-span">
-            1
+            3
             <span class="span-img">
             <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">
@@ -34,7 +38,7 @@
             </span>
         </span>
         <span class="resto-tables-span">
-            1
+            4
             <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">
@@ -45,7 +49,7 @@
             </span>
         </span>
         <span class="resto-tables-span">
-            1
+            5
             <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">
@@ -54,14 +58,14 @@
             </span>
         </span>        
         <span class="resto-tables-span">
-            1
+            6
             <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">             
             </span>
         </span>
         <span class="resto-tables-span">
-            1
+            7
             <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">
@@ -72,14 +76,14 @@
             </span>
         </span>
         <span class="resto-tables-span">
-            1
+            8
             <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">             
             </span>
         </span>        
         <span class="resto-tables-span">
-            1
+            9
              <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">
@@ -88,7 +92,7 @@
             </span>
         </span>        
         <span class="resto-tables-span">
-            1
+            10
             <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">
@@ -98,7 +102,7 @@
             </span>
         </span>
         <span class="resto-tables-span">
-            1
+            11
             <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">             
@@ -106,7 +110,7 @@
 
         </span>        
         <span class="resto-tables-span">
-            1
+            12
             <span class="span-img">
             <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">
@@ -114,21 +118,36 @@
              <img class="img-resto-table" src="img/customer.png">
             </span>
         </span> 
-        <span class="resto-tables-span">
-            1
+                <span class="resto-tables-span">
+            3
             <span class="span-img">
             <img class="img-resto-table" src="img/customer.png">
-             <img class="img-resto-table" src="img/customer.png"> 
+             <img class="img-resto-table" src="img/customer.png">
+             <img class="img-resto-table" src="img/customer.png">
+             <img class="img-resto-table" src="img/customer.png">
+            </span>
+        </span>
+        <span class="resto-tables-span">
+            4
+            <span class="span-img">
+             <img class="img-resto-table" src="img/customer.png">
+             <img class="img-resto-table" src="img/customer.png">
+             <img class="img-resto-table" src="img/customer.png">
+             <img class="img-resto-table" src="img/customer.png">
+             <img class="img-resto-table" src="img/customer.png">
+             <img class="img-resto-table" src="img/customer.png">            
+            </span>
+        </span>
+        <span class="resto-tables-span">
+            5
+            <span class="span-img">
+             <img class="img-resto-table" src="img/customer.png">
+             <img class="img-resto-table" src="img/customer.png">
+             <img class="img-resto-table" src="img/customer.png">
+             <img class="img-resto-table" src="img/customer.png">        
             </span>
         </span>        
-        <span class="resto-tables-span">
-            1
-            <span class="span-img">
-            <img class="img-resto-table" src="img/customer.png">
-             <img class="img-resto-table" src="img/customer.png"> 
-            </span>
-              
-        </span> 
+
     </div>
 
     <?php require_once("scripts.php"); ?>
