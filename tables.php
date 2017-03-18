@@ -7,7 +7,9 @@
     <head>
         <?php require_once("head.php"); ?>      
     </head>
-
+            <nav class="nav-resto-table">
+    
+            </nav>
     <div class="table-respo">
         <span class="resto-tables-span">   
             1
