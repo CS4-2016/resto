@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <title>Flexbox Admin Template</title>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-  <link rel="stylesheet" href="css/style_godfrey.css">
+    <script src="js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style_godfrey.css">
 </head>
 
 <body>
@@ -21,16 +22,9 @@
 
     <ul>
       <li><span>Navigation</span></li>
-      <li><a class="active">Dashboard</a></li>
-      <li><a>Statistics</a></li>
-      <li><a>Roadmap</a></li>
-      <li><a>Milestones</a></li>
-      <li><a>Tickets</a></li>
-      <li><a>GitHub</a></li>
-      <li><a>FAQ</a></li>
-      <li><span>Other</span></li>
-      <li><a>Search</a></li>
-      <li><a>Settings</a></li>
+      <li><a href="manage-category.php" class="active">Dashboard</a></li>
+      <li><a href="manage-menu.php">Manage Menu</a></li>
+      <li><a>Manage User</a></li>
       <li><a>Logout</a></li>
     </ul>
 
@@ -42,7 +36,7 @@
 
     <div class="flex-grid">
       <div class="manage-category">
-          <a href="#">
+          <a href="manage-menu.php">
             <h2>Manage Menu</h2>
             <div class="icon" style="padding-bottom:35px;"><i class="fa fa-cutlery fa-4x"></i></div>
           </a>

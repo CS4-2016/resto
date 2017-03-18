@@ -1,6 +1,7 @@
   /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-@import url("http://fonts.googleapis.com/css?family=Open+Sans");
-@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+
+
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -32,12 +33,18 @@ ul {
 
 .wrapper {
   display: flex;
-  min-height: 100%;
+  height: 100%;
+}
+
+.main-header{
+    width: 100%;
+    height: 100px;
 }
 
 nav {
   width: 200px;
   background: #404040;
+    height: 100%;
 }
 
 nav header {
@@ -105,40 +112,18 @@ nav ul li:nth-child(2) a:before {
 }
 
 nav ul li:nth-child(3) a:before {
-  content: '\f012';
+  content: '\f0f5';
 }
 
 nav ul li:nth-child(4) a:before {
-  content: '\f018';
+  content: '\f007';
 }
 
 nav ul li:nth-child(5) a:before {
-  content: '\f024';
-}
-
-nav ul li:nth-child(6) a:before {
-  content: '\f0c3';
-}
-
-nav ul li:nth-child(7) a:before {
-  content: '\f09b';
-}
-
-nav ul li:nth-child(8) a:before {
-  content: '\f0fa';
-}
-
-nav ul li:nth-child(10) a:before {
-  content: '\f002';
-}
-
-nav ul li:nth-child(11) a:before {
-  content: '\f085';
-}
-
-nav ul li:nth-child(12) a:before {
   content: '\f08b';
 }
+
+
 
 main {
   flex: 1;
@@ -247,6 +232,56 @@ a .icon:hover{
 
 }
 
+.content-wrapper{
+  flex: 1;
+  padding-top: 25px;
+  background: #f5f5f5;
+}
+
+.content-wrapper h1 {
+  height: 80px;
+  margin: -25px -25px 0px -25px;
+  padding-left: 4.5%;
+  line-height: 76px;
+  font-size: 24px;
+  font-weight: 400;
+  background: #ddd;
+  width: 102%;
+}
+
+
+.flex-container {
+  
+    display: flex;
+    width: 100%;
+    height: 91%;
+    background-color: #EEE;
+}
+
+.flex-item {   
+    width: 20%;
+    height: 100%;  
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.flex-item>.header{
+    padding: 10px;
+    display: flex;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    font-size: 18px;
+    text-transform: capitalize;
+    min-width: 150px;
+    background-color: white;
+    z-index: 1;
+ 
+}
+
+.flex-item1 {
+    
+    width: 100%;
+    height: 100%;   
+}
+
 .icon{
     padding-left: 40%;
     padding-bottom: 20%;
@@ -298,12 +333,19 @@ a .icon:hover{
 
     }
     
+    .flex-item>.header{
+        padding: 10px;
+        display: flex;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        font-size: 15px;
+        text-transform: capitalize;
+        min-width: 20px;
+        background-color: white;
+        z-index: 1;
+    }
+    
     .icon{
         padding-left: 30%;
         padding-bottom: 20%;
     }
 }
-
-
-
-
