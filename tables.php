@@ -8,6 +8,7 @@
         <?php require_once("head.php"); ?>      
     </head>
             <nav class="nav-resto-table">
+                <i><img src="img/el-logo.PNG" class="nav-resto-table-logo"></i>
     
             </nav>
     <div class="table-respo">
@@ -21,13 +22,14 @@
             </span>
         </span>
         <span class="resto-tables-span">
-            1<span class="span-img">
+            2
+            <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">
             </span>
         </span>        
         <span class="resto-tables-span">
-            1
+            3
             <span class="span-img">
             <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">
@@ -36,7 +38,7 @@
             </span>
         </span>
         <span class="resto-tables-span">
-            1
+            4
             <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">
@@ -47,7 +49,7 @@
             </span>
         </span>
         <span class="resto-tables-span">
-            1
+            5
             <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">
@@ -56,14 +58,14 @@
             </span>
         </span>        
         <span class="resto-tables-span">
-            1
+            6
             <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">             
             </span>
         </span>
         <span class="resto-tables-span">
-            1
+            7
             <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">
@@ -74,14 +76,14 @@
             </span>
         </span>
         <span class="resto-tables-span">
-            1
+            8
             <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">             
             </span>
         </span>        
         <span class="resto-tables-span">
-            1
+            9
              <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">
@@ -90,7 +92,7 @@
             </span>
         </span>        
         <span class="resto-tables-span">
-            1
+            10
             <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">
@@ -100,7 +102,7 @@
             </span>
         </span>
         <span class="resto-tables-span">
-            1
+            11
             <span class="span-img">
              <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">             
@@ -108,7 +110,7 @@
 
         </span>        
         <span class="resto-tables-span">
-            1
+            12
             <span class="span-img">
             <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png">
@@ -117,14 +119,14 @@
             </span>
         </span> 
         <span class="resto-tables-span">
-            1
+            13
             <span class="span-img">
             <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png"> 
             </span>
         </span>        
         <span class="resto-tables-span">
-            1
+            14
             <span class="span-img">
             <img class="img-resto-table" src="img/customer.png">
              <img class="img-resto-table" src="img/customer.png"> 

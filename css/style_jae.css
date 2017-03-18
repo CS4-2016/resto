@@ -28,6 +28,14 @@ span {
 
 .nav-resto-table {
     width: 100%;
-    background-color: antiquewhite;
+    background-color: #e6b800;
+    height: 55px;
+    margin-bottom: 1%;
+}
+
+.nav-resto-table-logo {
     height: 50px;
+    width: 50px;
+    margin: 1px;
+    padding: 1px;
 }
