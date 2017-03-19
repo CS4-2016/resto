@@ -63,7 +63,7 @@
 			<span class="span-img">
 				<img class="img-resto-table" src="img/customer.png">
 				<img class="img-resto-table" src="img/customer.png">
-			</span>
+			</span> 
 		</span>
 		<span class="resto-tables-span">
 			7
