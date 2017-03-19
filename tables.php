@@ -28,7 +28,7 @@
 				<img class="img-resto-table" src="img/customer.png">
 				<img class="img-resto-table" src="img/customer.png">
 			</span>
-		</span>		
+		</span>
 		<span class="resto-tables-span">
 			3
 			<span class="span-img">
@@ -57,13 +57,13 @@
 				<img class="img-resto-table" src="img/customer.png">
 				<img class="img-resto-table" src="img/customer.png">
 			</span>
-		</span>		
+		</span>
 		<span class="resto-tables-span reserved">
 			6
 			<span class="span-img">
 				<img class="img-resto-table" src="img/customer.png">
 				<img class="img-resto-table" src="img/customer.png">
-			</span>
+			</span> 
 		</span>
 		<span class="resto-tables-span">
 			7
@@ -82,7 +82,7 @@
 				<img class="img-resto-table" src="img/customer.png">
 				<img class="img-resto-table" src="img/customer.png">
 			</span>
-		</span>		
+		</span>
 		<span class="resto-tables-span">
 			9
 			<span class="span-img">
@@ -91,7 +91,7 @@
 				<img class="img-resto-table" src="img/customer.png">
 				<img class="img-resto-table" src="img/customer.png">
 			</span>
-		</span>		
+		</span>
 		<span class="resto-tables-span occupied">
 			10
 			<span class="span-img">
@@ -99,7 +99,6 @@
 				<img class="img-resto-table" src="img/customer.png">
 				<img class="img-resto-table" src="img/customer.png">
 				<img class="img-resto-table" src="img/customer.png">
-
 			</span>
 		</span>
 		<span class="resto-tables-span">
@@ -108,8 +107,7 @@
 				<img class="img-resto-table" src="img/customer.png">
 				<img class="img-resto-table" src="img/customer.png">
 			</span>
-
-		</span>		
+		</span>
 		<span class="resto-tables-span reserved">
 			12
 			<span class="span-img">
@@ -118,7 +116,7 @@
 				<img class="img-resto-table" src="img/customer.png">
 				<img class="img-resto-table" src="img/customer.png">
 			</span>
-		</span> 
+		</span>
 		<span class="resto-tables-span">
 			3
 			<span class="span-img">
