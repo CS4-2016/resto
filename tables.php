@@ -1,5 +1,7 @@
 <?php
 	require_once("dbconn.php");
+	$db=new db();
+	$db->Connect();
 ?>
 
 <!DOCTYPE html>
@@ -11,141 +13,40 @@
 	<nav class="nav-resto">
 		<img src="img/el-logo.PNG" class="table-logo-resto">
 	</nav>
+	<?php
+		$sql="SELECT * FROM tables ORDER BY id ASC";
+		$db->Query($sql);
 
+		$table=array();
+
+		if($db->result)
+		{
+			while($row=$db->result->fetch_assoc())
+				$table[]=$row;
+		}
+	?>
 	<div class="table-respo">
-		<span class="resto-tables-span occupied">
-			1
+		<?php
+			for($x=0; $x<15; $x++)
+			{
+		?>
+		<span class="resto-tables-span <?php echo $table[$x]['status']; ?>">
+			<?php echo $table[$x]['table_number']; ?>
 			<span class="span-img">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
+				<?php
+					$capacity=$table[$x]['capacity'];
+					for($y=0;$y<$capacity;$y++)
+					{
+				?>
+					<img class="img-resto-table" src="img/customer.png">
+				<?php
+					}
+				?>
 			</span>
 		</span>
-		<span class="resto-tables-span reserved">
-			2
-			<span class="span-img">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-			</span>
-		</span>
-		<span class="resto-tables-span">
-			3
-			<span class="span-img">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-			</span>
-		</span>
-		<span class="resto-tables-span reserved">
-			4
-			<span class="span-img">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-			</span>
-		</span>
-		<span class="resto-tables-span">
-			5
-			<span class="span-img">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-			</span>
-		</span>
-		<span class="resto-tables-span reserved">
-			6
-			<span class="span-img">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-			</span>
-		</span>
-		<span class="resto-tables-span">
-			7
-			<span class="span-img">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-			</span>
-		</span>
-		<span class="resto-tables-span">
-			8
-			<span class="span-img">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-			</span>
-		</span>
-		<span class="resto-tables-span">
-			9
-			<span class="span-img">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-			</span>
-		</span>
-		<span class="resto-tables-span occupied">
-			10
-			<span class="span-img">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-			</span>
-		</span>
-		<span class="resto-tables-span">
-			11
-			<span class="span-img">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-			</span>
-		</span>
-		<span class="resto-tables-span reserved">
-			12
-			<span class="span-img">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-			</span>
-		</span>
-		<span class="resto-tables-span">
-			3
-			<span class="span-img">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-			</span>
-		</span>
-		<span class="resto-tables-span occupied">
-			4
-			<span class="span-img">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-			</span>
-		</span>
-		<span class="resto-tables-span occupied">
-			5
-			<span class="span-img">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-				<img class="img-resto-table" src="img/customer.png">
-			</span>
-		</span>
+		<?php
+			}
+		?>
 	</div>
 	<?php require_once("scripts.php"); ?>
 </body>
