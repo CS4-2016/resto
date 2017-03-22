@@ -6,6 +6,8 @@
 <html ng-app="resto">
     <head>
         <?php require_once("head.php"); ?>        
+        <link href="css/style_paul.css" rel="stylesheet">
+        <link href="css/style_jae.css" rel="stylesheet">
     </head>
     <body>
     
