@@ -49,11 +49,7 @@ textarea {
    margin-top: -4px;
  }
  
- button {
-   padding: 5px 15px;
-   margin: 5px;
-   min-width: 100px
- }
+ 
  
  @media (max-width: 768px) {
    .form-group {
@@ -67,4 +63,19 @@ textarea {
      padding-right: 0;
      padding-left: 0;   
    }
+ }
+
+ .delete-icon{
+  margin-bottom: 6.5%;
+  margin-left: 5%;
+  float: right;
+  color: red;
+ }
+
+ a:hover{
+  color: white;
+ }
+ a.manage-user-link:hover{
+   color: lightblue;
+   text-decoration: none;
  }

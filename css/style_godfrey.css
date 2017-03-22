@@ -220,6 +220,9 @@ a .icon:hover{
     color: white;
 
 }
+.manage-user-link{
+  color:black;
+}
 
 .logout{
     background-color: #d9534f;
@@ -613,6 +616,7 @@ p.description_content{
     color: black;
 
 }
+
 
 
 /*

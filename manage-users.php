@@ -1,16 +1,20 @@
+<?php
+  require_once("dbconn.php");
+  $db=new db();
+  $db->Connect();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Flexbox Admin Template</title>
     <?php
-    require_once('head.php');
+      require_once('head.php');
     ?>
     <script src="js/prefixfree.min.js"></script>
-    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style_godfrey.css">
-     <link rel="stylesheet" href="css/style_alec.css">
- 
+    <link rel="stylesheet" href="css/style_alec.css">
 </head>
 
 <body style="height:100%;">
@@ -27,8 +31,8 @@
     <ul>
       <li><span>Navigation</span></li>
       <li><a href="manage-category.php">Dashboard</a></li>
-      <li><a class="active">Manage Menu</a></li>
-      <li><a href="manage-user.php">Manage User</a></li>
+      <li><a href="manage-menu.php">Manage Menu</a></li>
+      <li><a href="manage-users.php" class="active">Manage User</a></li>
       <li><a>Logout</a></li>
     </ul>
 
@@ -43,40 +47,31 @@
                   <div class="header">
                       Users
                   </div>
+                  <?php
+                    $sql="SELECT * FROM users";
+                    $db->Query($sql);
+
+                    if($db->result)
+                    {
+                      while($row=$db->result->fetch_assoc()){
+                    ?>
+                       <span><a class="manage-user-link" href="javascript: void(0)" onclick="getUserDetails(<?php echo $row['id'] ?>)"><?php echo $row['firstname']." ".$row['lastname']; ?></a><a class="" href="delete-user.php?id=<?php echo $row['id'] ?>"><i class="fa fa-trash fa-fw delete-icon"></i></a></span><br><br>
+                    <?php  }
+                    }
+                    ?>
               </div>  
-              <div class="flex-information">
-                  <div class="header">
-                      User's Information
-                  </div>
-                    <article class="main-content">
-                      <div class="form-group">
-                        <label>First Name</label>
-                        <input name="textFname" class="input-control" disabled/>
-
-                        <label class="right-inline">Last Name</label>
-                        <input name="textLname" class="input-control" disabled/>
-                      </div>
-
-                      <div class="form-group">
-                        <label>Position</label>
-                        <input name="textPosition" class="input-control" style="flex: 6" disabled/>  
-                      </div>
-
-                      <div class="form-group">
-                        <label>Address</label>
-                        <textarea class="input-control" name="textAddress" disabled> </textarea>
-                      </div>
-
-                      <div class="form-group">
-                        <label>City,State,Zip</label>
-                        <input name="textCity" class="input-control" style="flex: 6" disabled />    
-                        <input name="textState" class="input-control" style="flex:1" disabled />    
-                        <input name="textZip" class="input-control" style="flex:2" disabled />
-                      </div>
-                    </article>
-              </div> 
+              <div class="flex-information user-info">
+              </div>
             </div>
     </div>
 </div>
+
+<script>
+  function getUserDetails(id){
+    $.post('users-info.php', {id: id}, function(o){
+      $(".user-info").html(o);
+    });
+  }
+</script>
 </body>
 </html>
