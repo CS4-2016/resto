@@ -1,0 +1,141 @@
+<html>
+<head>
+<style>
+.thumbnail-grid {
+	user-select: none
+}
+.thumbnail-grid figure {
+	position: relative;
+	min-width: 200px;
+	height: 150px;
+	margin: 5px;
+	border-radius: 3px;
+	box-shadow: inset 0 -40px 0 0 rgba(0,0,0,.1);
+	transition: all .2s ease-in-out
+}
+.thumbnail-grid figure:hover {
+	box-shadow: inset 0 -150px 0 0 rgba(0,0,0,.5);
+}
+.thumbnail-grid figcaption {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	color: #f4f4f4;
+	text-shadow: 0 0 3px #000;
+	bottom: 10px;
+	transition: all .2s ease-in-out
+}
+.thumbnail-grid figure:hover figcaption {
+	bottom: 60px
+}
+.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch
+}
+.flex-item {
+	flex: 1 0 auto
+}
+
+/* DEMO STYLING */
+* {
+	box-sizing: border-box
+}
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.8rem;
+    background: radial-gradient(ellipse at center, #f5f5f5 0%,#ddd 100%);
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+h1 {
+	font-family: Merriweather, serif;
+}
+/* Thumbnails, just for demo purposes */
+.thumbnail-grid figure.i1 {
+	background: url(https://anselmurban.de/codepen-img/sinfonietta-meridiana.png) no-repeat center;
+	background-size: cover
+}
+.thumbnail-grid figure.i2 {
+	background: url(https://anselmurban.de/codepen-img/pension.png) no-repeat center;
+	background-size: cover
+}
+.thumbnail-grid figure.i3 {
+	background: url(https://anselmurban.de/codepen-img/goerlitzmade.png) no-repeat center;
+	background-size: cover
+}
+/* Thumbnails for HiDPI/retina screens */
+@media print,
+	(-o-min-device-pixel-ratio: 5/4),
+	(-webkit-min-device-pixel-ratio: 1.25),
+	(min-resolution: 120dpi) {
+	.thumbnail-grid figure.i1 {
+		background-image: url(https://anselmurban.de/codepen-img/sinfonietta-meridiana%402x.png)
+	}
+	.thumbnail-grid figure.i2 {
+		background-image: url(https://anselmurban.de/codepen-img/pension%402x.png)
+	}
+	.thumbnail-grid figure.i3 {
+		background-image: url(https://anselmurban.de/codepen-img/goerlitzmade%402x.png)
+	}
+}
+</style>
+</head>
+<body>
+	<main>
+		<h1>Flexbox Grid with Hover Effects in Pure CSS</h1>
+		<section class="thumbnail-grid flex">
+			<a href="https://sinfonietta-meridiana.de/" class="flex-item">
+				<figure class="i1">
+					<figcaption>Project #1</figcaption>
+				</figure>
+			</a>
+			<a href="https://pension-am-alten-waschhaus.de/en/" class="flex-item">
+				<figure class="i2">
+					<figcaption>Project #2</figcaption>
+				</figure>
+			</a>
+			<a href="#!" class="flex-item">
+				<figure class="i3">
+					<figcaption>Project #3</figcaption>
+				</figure>
+			</a>
+            <a href="#!" class="flex-item">
+				<figure class="i3">
+					<figcaption>Project #3</figcaption>
+				</figure>
+			</a>
+            <a href="#!" class="flex-item">
+				<figure class="i3">
+					<figcaption>Project #3</figcaption>
+				</figure>
+			</a>
+            <a href="#!" class="flex-item">
+				<figure class="i3">
+					<figcaption>Project #3</figcaption>
+				</figure>
+			</a>
+            <a href="#!" class="flex-item">
+				<figure class="i3">
+					<figcaption>Project #3</figcaption>
+				</figure>
+			</a>
+		</section>
+		<p>Feel free to use this code.<br>If you have any suggestions, please leave a comment.</p>
+	</main>
+</body>
+</html>

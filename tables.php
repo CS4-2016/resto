@@ -1,211 +1,53 @@
 <?php
-    require_once("dbconn.php");
+	require_once("dbconn.php");
+	$db=new db();
+	$db->Connect();
 ?>
 
 <!DOCTYPE html>
 <html ng-app="resto">
-    <head>
-        <?php require_once("head.php"); ?>      
-    </head>
-    <body class="el-table-page">
-        <div class="background-img-table">
-            <nav class="el-nav unselectable">
-                <span class="el-logo-nav"><img class="el-img" src="img/el-banner.png"></span>
-                <span class="el-user-nav" id="header-user-click">
-                    John Doe <i class="fa fa-user fa-fw"></i><i class="fa fa-caret-down"></i>
-                </span>
-                <ul class="unselectable" id="header-drop-down">
-                    <li><a href="#"><i class="fa fa-user"></i> User Profile</a></li>
-                    <li><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
-                </ul>
-            </nav>
-            <h2 class="el-page-header">
-                Table Status
-            </h2>
-            <div class="table-status-select">
-                <span style="color:white">View:</span>
-                <select>
-                    <option>All</option>
-                    <option>Occupied</option>
-                    <option>Unoccupied</option>
-                    <option>Reserved</option>
-                </select>
-            </div>
-            <div class="table-list">
-                <a>
-                    <figure>
-                        <table class="table-resto table-reserved">
-                            <tr>
-                                <td class="table-resto-td1">1</td>
-                                <td class="table-resto-td2">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <br>
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                </td>
-                            </tr>
-                        </table>
-                    </figure>
-                </a>
-                <a>
-                    <figure>
-                        <table class="table-resto table-unoccupied">
-                            <tr>
-                                <td class="table-resto-td1">2</td>
-                                <td class="table-resto-td2">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
+<head>
+	<?php require_once("head.php"); ?>
+</head>
+<body>
+	<nav class="nav-resto">
+		<img src="img/el-logo.PNG" class="table-logo-resto">
+	</nav>
+	<?php
+		$sql="SELECT * FROM tables ORDER BY id ASC";
+		$db->Query($sql);
 
-                                </td>
-                            </tr>
-                        </table>
-                    </figure>
-                </a>
-               <a>
-                    <figure>
-                        <table class="table-resto table-occupied">
-                            <tr>
-                                <td class="table-resto-td1">3</td>
-                                <td class="table-resto-td2">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                </td>
-                            </tr>
-                        </table>
-                    </figure>
-                </a>
-                 <a>
-                    <figure>
-                        <table class="table-resto table-unoccupied">
-                            <tr>
-                                <td class="table-resto-td1">4</td>
-                                <td class="table-resto-td2">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <br>
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                </td>
-                            </tr>
-                        </table>
-                    </figure>
-                </a>
-                <a>
-                    <figure>
-                        <table class="table-resto table-unoccupied">
-                            <tr>
-                                <td class="table-resto-td1">5</td>
-                                <td class="table-resto-td2">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <br>
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                </td>
-                            </tr>
-                        </table>
-                    </figure>
-                </a>
+		$table=array();
 
-                <a>
-                    <figure>
-                        <table class="table-resto table-unoccupied">
-                            <tr>
-                                <td class="table-resto-td1">6</td>
-                                <td class="table-resto-td2">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                </td>
-                            </tr>
-                        </table>
-                    </figure>
-                </a>
-
-                 <a>
-                    <figure>
-                        <table class="table-resto table-unoccupied">
-                            <tr>
-                                <td class="table-resto-td1">7</td>
-                                <td class="table-resto-td2">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                </td>
-                            </tr>
-                        </table>
-                    </figure>
-                </a>
-
-                 <a>
-                    <figure>
-                        <table class="table-resto table-unoccupied">
-                            <tr>
-                                <td class="table-resto-td1">8</td>
-                                <td class="table-resto-td2">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                </td>
-                            </tr>
-                        </table>
-                    </figure>
-                </a>
-                <a>
-                    <figure>
-                        <table class="table-resto table-unoccupied">
-                            <tr>
-                                <td class="table-resto-td1">9</td>
-                                <td class="table-resto-td2">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <br>
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                </td>
-                            </tr>
-                        </table>
-                    </figure>
-                </a>
-                 <a>
-                    <figure>
-                        <table class="table-resto table-unoccupied">
-                            <tr>
-                                <td class="table-resto-td1">10</td>
-                                <td class="table-resto-td2">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                </td>
-                            </tr>
-                        </table>
-                    </figure>
-                </a>
-                <a>
-                    <figure>
-                        <table class="table-resto table-reserved">
-                            <tr>
-                                <td class="table-resto-td1">11</td>
-                                <td class="table-resto-td2">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                </td>
-                            </tr>
-                        </table>
-                    </figure>
-                </a>
-               <a>
-                    <figure>
-                        <table class="table-resto table-unoccupied">
-                            <tr>
-                                <td class="table-resto-td1">12</td>
-                                <td class="table-resto-td2">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                    <img class="img-table-customer el-img" src="./img/customer.png">
-                                </td>
-                            </tr>
-                        </table>
-                    </figure>
-                </a>
-            </div>
-        </div>
-    </body>
-    <?php require_once("scripts.php"); ?>
+		if($db->result)
+		{
+			while($row=$db->result->fetch_assoc())
+				$table[]=$row;
+		}
+	?>
+	<div class="table-respo">
+		<?php
+			for($x=0; $x<15; $x++)
+			{
+		?>
+		<span class="resto-tables-span <?php echo $table[$x]['status']; ?>">
+			<?php echo $table[$x]['table_number']; ?>
+			<span class="span-img">
+				<?php
+					$capacity=$table[$x]['capacity'];
+					for($y=0;$y<$capacity;$y++)
+					{
+				?>
+					<img class="img-resto-table" src="img/customer.png">
+				<?php
+					}
+				?>
+			</span>
+		</span>
+		<?php
+			}
+		?>
+	</div>
+	<?php require_once("scripts.php"); ?>
+</body>
 </html>

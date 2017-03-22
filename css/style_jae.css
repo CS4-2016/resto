@@ -22,16 +22,6 @@ html, body {
 	opacity: 0.9;
 }
 
-.container-resto {
-    position: relative;
-    width: 340px;
-    height: 280px;
-	background: #fff;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, .1);
-}
-
 .login-text-box{
     color: #777;
     margin: 10px;

@@ -5,7 +5,7 @@
         require_once("head.php")
     ?>
     <link rel="stylesheet" href="css/style_godfrey.css">
-   
+
 </head>
 <body>
 
@@ -672,6 +672,7 @@
 
 </div>
     </div>
+
   <div class="order-item">
         <div class="header">
             Table #:
@@ -682,6 +683,9 @@
              <center><input type="submit" value="Place Order" class="btn-placeorder"></center>
      
     </div> 
+
+  <div class="order-item">flex item 2</div> 
+
 </div>
     </body>
 </html>
