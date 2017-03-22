@@ -14,8 +14,16 @@ window.manage_menu = {
 
 window.category = {
     getAll: function(c){
-        $.get("manage-menu-category-get.php?category="+ c, function(ret){
+        $.get("manage-menu-category-get-dish.php?category="+ c, function(ret){
             $(".dish-wrapper").html(ret);
         })
+    },
+    
+    add: function(){
+        var c = $('#add_category').val();
+        $.get("manage-menu-category-add.php?category="+ c, function(ret){
+            $(".category-wrapper").append(ret);
+        });
+        manage_menu.getAll();
     }
 }

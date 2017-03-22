@@ -3,13 +3,13 @@
     $db = new db();
     $db->Connect();
 
-    $SQL = "SELECT DISTINCT `category` FROM `menu`";
+    $SQL = "SELECT `category_name` FROM `menu_category`";
     $db->Query($SQL);
 
     if($db->result){
         while($row = $db->result->fetch_assoc()){ ?>
             
-            <div data-i="<?php echo $row['category']; ?>" onclick="category.getAll('<?php echo $row['category']; ?>')" class="category-wrapper"><?php echo $row['category']; ?>
+            <div data-i="<?php echo $row['category_name']; ?>" onclick="category.getAll('<?php echo $row['category_name']; ?>')" class="category-item"><?php echo $row['category_name']; ?>
             </div> <?php
         }
     }
