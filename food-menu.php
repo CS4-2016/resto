@@ -683,9 +683,6 @@
              <center><input type="submit" value="Place Order" class="btn-placeorder"></center>
      
     </div> 
-
-
-
 </div>
     </body>
 </html>
