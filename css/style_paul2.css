@@ -1,0 +1,11 @@
+.category-wrapper {
+    padding: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.fa-category{
+    position:relative;
+}
