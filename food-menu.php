@@ -684,8 +684,6 @@
      
     </div> 
 
-  <div class="order-item">flex item 2</div> 
-
 </div>
     </body>
 </html>
