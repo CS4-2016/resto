@@ -5,14 +5,13 @@
     
     $category = $_GET['category'];
     
-    $SQL = "SELECT `name` FROM `menu` WHERE `category` = '$category'";
-
+    $SQL = "SELECT `id`,`name` FROM `menu` WHERE `category` = '$category'";
     $db->Query($SQL);
 
     if($db->result){
         while($row = $db->result->fetch_assoc()){ ?>
 
-            <div data-i="<?php echo $row['name']; ?>" onclick="category.getAll('<?php echo $row['name']; ?>')" class="category-wrapper"><?php echo $row['name']; ?>
+            <div data-i="<?php echo $row['name']; ?>" onclick="dish.get('<?php echo $row['id']; ?>')" class="dish-item"><?php echo $row['name']; ?>
             </div> <?php
         }
     }
