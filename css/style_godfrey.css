@@ -393,7 +393,7 @@ body {
           flex-grow: 1;
   max-height: 40px;
     background-color: #e6b800;
-        font-weight: 100;
+    font-weight: 100;
 
     
 }
@@ -425,9 +425,10 @@ body {
 #tab-three:checked ~ .tabs #tab-three-label,
 #tab-four:checked ~ .tabs #tab-four-label {
 
-  background-color: #EEE;
+  background-color: #EEE; 
   cursor: default;
-  border-left-color: #663300;    
+  border-left-color: #663300 ;
+    
 
 }
 
@@ -437,7 +438,6 @@ body {
 #tab-four:checked ~ .tabs #tab-four-panel {
   display: block;
   margin-top: 4%;
-
   background-color: #EEE;
 
 }

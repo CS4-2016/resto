@@ -683,9 +683,6 @@
              <center><input type="submit" value="Place Order" class="btn-placeorder"></center>
      
     </div> 
-
-  <div class="order-item">flex item 2</div> 
-
 </div>
     </body>
 </html>
