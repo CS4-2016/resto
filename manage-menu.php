@@ -25,7 +25,7 @@
       <li><span>Navigation</span></li>
       <li><a href="manage-category.php">Dashboard</a></li>
       <li><a class="active">Manage Menu</a></li>
-      <li><a href="manage-user.php">Manage User</a></li>
+      <li><a href="manage-users.php">Manage User</a></li>
       <li><a>Logout</a></li>
     </ul>
 

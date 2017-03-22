@@ -71,3 +71,11 @@ textarea {
   float: right;
   color: red;
  }
+
+ a:hover{
+  color: white;
+ }
+ a.manage-user-link:hover{
+   color: lightblue;
+   text-decoration: none;
+ }
