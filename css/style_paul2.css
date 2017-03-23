@@ -19,3 +19,7 @@
     text-transform: capitalize;
     cursor: pointer;
 }
+
+.animated{
+    animation-duration: 0.2s;
+}

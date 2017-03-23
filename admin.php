@@ -9,7 +9,7 @@
     <?php 
         require_once("head.php"); 
     ?>
-    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style_godfrey.css">
     <link rel="stylesheet" href="css/style_paul2.css">
  

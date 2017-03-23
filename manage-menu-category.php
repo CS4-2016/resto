@@ -8,7 +8,6 @@
 
     if($db->result){
         while($row = $db->result->fetch_assoc()){ ?>
-            
             <div data-i="<?php echo $row['category_name']; ?>" onclick="category.getAll('<?php echo $row['category_name']; ?>')" class="category-item"><?php echo $row['category_name']; ?>
             </div> <?php
         }
