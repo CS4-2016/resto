@@ -393,6 +393,7 @@ body {
           flex-grow: 1;
   max-height: 40px;
     background-color: #e6b800;
+        font-weight: 100;
     
 }
 .worko-tabs .flex-tabs .panel {
@@ -424,6 +425,7 @@ body {
   background-color: #fff;
   cursor: default;
   border-left-color: #69be28;
+  
     
 }
 
@@ -433,8 +435,6 @@ body {
 #tab-four:checked ~ .tabs #tab-four-panel {
   display: block;
   margin-top: 4%;
-        
- 
 
 }
 
