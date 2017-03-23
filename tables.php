@@ -8,6 +8,8 @@
 <html ng-app="resto">
 <head>
 	<?php require_once("head.php"); ?>
+	<link rel="stylesheet" href="css/style_ja.css">
+	<link rel="stylesheet" href="css/style_jae.css">
 </head>
 <body>
 	<nav class="nav-resto">

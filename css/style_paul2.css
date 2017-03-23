@@ -1,0 +1,21 @@
+.category-wrapper, .dish-item, .category-item {
+    padding: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.fa-category, .fa-dish{
+    position:relative;
+    right:10px;
+}
+
+.category-flex-cheat, .dish-flex-cheat{
+    flex-grow: 1;
+}
+
+.dish-item, .category-item{
+    text-transform: capitalize;
+    cursor: pointer;
+}

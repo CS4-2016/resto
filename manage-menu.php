@@ -1,37 +1,4 @@
-<!DOCTYPE html>
-<html style="height:100%;">
-<head>
-  <meta charset="UTF-8">
-  <title>Flexbox Admin Template</title>
 
-    <script src="js/prefixfree.min.js"></script>
-    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style_godfrey.css">
- 
-</head>
-
-<body style="height:100%;">
-  <div class="wrapper">
-
-  <nav>
-
-    <header>
-      <span></span>
-      John Doe
-      <a></a>
-    </header>
-
-    <ul>
-      <li><span>Navigation</span></li>
-      <li><a href="manage-category.php">Dashboard</a></li>
-      <li><a class="active">Manage Menu</a></li>
-      <li><a href="manage-user.php">Manage User</a></li>
-      <li><a>Logout</a></li>
-    </ul>
-
-  </nav>
-
-    <div class="content-wrapper">
         <div class="content-header">
             <h1>Manage Menu</h1>
         </div>
@@ -39,18 +6,74 @@
               <div class="flex-item">
                   <div class="header">
                       Category
+                      <span class="category-flex-cheat" flex></span>
+                      <i style="cursor: pointer" class="fa fa-plus fa-category" aria-hidden="true" type="button" data-toggle="modal" data-target="#modalCategory"></i>
+                  </div>
+                  <div class="category-wrapper">
+
                   </div>
               </div>
                 <div class="flex-item">
-                    <div class="header">Dish</div>
+                    <div class="header">
+                        Dish
+                        <span class="dish-flex-cheat" flex></span>
+                      <i style="cursor: pointer" class="fa fa-plus fa-dish" aria-hidden="true" type="button" data-toggle="modal" data-target="#modalDish"></i>
+                    </div>
+                    <div class="dish-wrapper">
+
+                    </div>
                 </div>
               <div class="flex-item1"></div>  
             </div>
-    </div>
-    
 
-</div>
-   
-  
-</body>
-</html>
+<div class="modal fade" id="modalCategory" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Category Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add Category</h4>
+        </div>
+        <div class="modal-body">
+            <table style="width:100%;">
+                <tr style="width:inherit;">
+                    <td style="width: 150px; margin-right: 30px;">Category name:</td>
+                    <td style="width: calc(100% - 150px)"><input style="width:100%; padding:5px;" type="text" id="add_category"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="modal-footer" style="border:none">
+          <button type="button" class="btn btn-primary" onclick="category.add()" data-dismiss="modal">Add</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<div class="modal fade" id="modalDish" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Dish Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add Dish to</h4>
+        </div>
+        <div class="modal-body">
+            <table style="width:100%;">
+                <tr style="width:inherit;">
+                    <td style="width: 150px; margin-right: 30px;">Dish name:</td>
+                    <td style="width: calc(100% - 150px)"><input style="width:100%; padding:5px;" type="text" id="add_category"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="modal-footer" style="border:none">
+          <button type="button" class="btn btn-primary" onclick="category.add()" data-dismiss="modal">Add</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
