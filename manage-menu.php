@@ -1,29 +1,23 @@
-
         <div class="content-header">
             <h1>Manage Menu</h1>
         </div>
             <div class="flex-container">
-              <div class="flex-item">
-                  <div class="header">
-                      Category
-                      <span class="category-flex-cheat" flex></span>
-                      <i style="cursor: pointer" class="fa fa-plus fa-category" aria-hidden="true" type="button" data-toggle="modal" data-target="#modalCategory"></i>
-                  </div>
-                  <div class="category-wrapper">
-
-                  </div>
-              </div>
-                <div class="flex-item">
+                <div class="flex-item animated fadeInLeft">
                     <div class="header">
-                        Dish
-                        <span class="dish-flex-cheat" flex></span>
-                      <i style="cursor: pointer" class="fa fa-plus fa-dish" aria-hidden="true" type="button" data-toggle="modal" data-target="#modalDish"></i>
+                        Category
+                        <span class="category-flex-cheat" flex></span>
+                        <i style="cursor: pointer" class="fa fa-plus fa-category" aria-hidden="true" type="button" data-toggle="modal" data-target="#modalCategory"></i>
                     </div>
-                    <div class="dish-wrapper">
+                    <div class="category-wrapper">
 
-                    </div>
+                     </div>
                 </div>
-              <div class="flex-item1"></div>  
+                <div class="flex-item dish">
+                    
+                </div>
+                <div class="flex-item1">
+            
+                </div>  
             </div>
 
 <div class="modal fade" id="modalCategory" role="dialog">
@@ -59,7 +53,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Add Dish to</h4>
+          <h4 class="modal-title">Add Dish</h4>
         </div>
         <div class="modal-body">
             <table style="width:100%;">
@@ -70,7 +64,7 @@
             </table>
         </div>
         <div class="modal-footer" style="border:none">
-          <button type="button" class="btn btn-primary" onclick="category.add()" data-dismiss="modal">Add</button>
+          <button type="button" class="btn btn-primary" onclick="dish.add()" data-dismiss="modal">Add</button>
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
         </div>
       </div>

@@ -25,7 +25,7 @@
                 $_SESSION['current-page'] = '';
                 
                 if($type == 'admin'){
-                    header("Location: manage-menu.php");    
+                    header("Location: admin.php");    
                 } else if($type == 'waiter'){
                     header("Location: tables.php");    
                 } 
