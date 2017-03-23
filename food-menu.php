@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <?php
+        require_once("head.php")
+    ?>
     <link rel="stylesheet" href="css/style_godfrey.css">
-<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    
 </head>
 <body>
 
@@ -530,13 +533,155 @@
         </header>
     </div>
     <div id="tab-four-panel" class="panel">
-      Tab four content
+        <header>
+             <div class="food-menu">
+                <a href="#">
+                    <img src="img/l_14621_avender-ginger-lemonade.jpg" alt>
+                
+                    <div class="food-name">
+                        	<p class='description_content'>CHOCOLATE ICE CREAM SANDWICHES
+                               <span class="currency">&#8369;250</span>
+                            </p>  
+                    </div>
+                </a>
+            </div>
+              <div class="food-menu">
+                <a href="#">
+                    <img src="img/l_14641_ice-cream-sandwiches--2-.jpg" alt>
+                
+                    <div class="food-name">
+                        	<p class='description_content'>DONUT ICE CREAM SANDWICH
+                               <span class="currency">&#8369;250</span>
+                            </p>  
+                    </div>
+                </a>
+            </div>
+             <div class="food-menu">
+                <a href="#">
+                    <img src="img/l_14002_elderflower-jelly.jpg" alt>
+                
+                    <div class="food-name">
+                        	<p class='description_content'>ELDERFLOWER JELLY
+                               <span class="currency">&#8369;250</span>
+                            </p>  
+                    </div>
+                </a>
+            </div>
+            <div class="food-menu">
+                <a href="#">
+                    <img src="img/l_14621_avender-ginger-lemonade.jpg" alt>
+                
+                    <div class="food-name">
+                        	<p class='description_content'>CHOCOLATE ICE CREAM SANDWICHES
+                               <span class="currency">&#8369;250</span>
+                            </p>  
+                    </div>
+                </a>
+            </div>
+              <div class="food-menu">
+                <a href="#">
+                    <img src="img/l_14641_ice-cream-sandwiches--2-.jpg" alt>
+                
+                    <div class="food-name">
+                        	<p class='description_content'>DONUT ICE CREAM SANDWICH
+                               <span class="currency">&#8369;250</span>
+                            </p>  
+                    </div>
+                </a>
+            </div>
+             <div class="food-menu">
+                <a href="#">
+                    <img src="img/l_14002_elderflower-jelly.jpg" alt>
+                
+                    <div class="food-name">
+                        	<p class='description_content'>ELDERFLOWER JELLY
+                               <span class="currency">&#8369;250</span>
+                            </p>  
+                    </div>
+                </a>
+            </div>
+            <div class="food-menu">
+                <a href="#">
+                    <img src="img/l_14621_avender-ginger-lemonade.jpg" alt>
+                
+                    <div class="food-name">
+                        	<p class='description_content'>CHOCOLATE ICE CREAM SANDWICHES
+                               <span class="currency">&#8369;250</span>
+                            </p>  
+                    </div>
+                </a>
+            </div>
+              <div class="food-menu">
+                <a href="#">
+                    <img src="img/l_14641_ice-cream-sandwiches--2-.jpg" alt>
+                
+                    <div class="food-name">
+                        	<p class='description_content'>DONUT ICE CREAM SANDWICH
+                               <span class="currency">&#8369;250</span>
+                            </p>  
+                    </div>
+                </a>
+            </div>
+             <div class="food-menu">
+                <a href="#">
+                    <img src="img/l_14002_elderflower-jelly.jpg" alt>
+                
+                    <div class="food-name">
+                        	<p class='description_content'>ELDERFLOWER JELLY
+                               <span class="currency">&#8369;250</span>
+                            </p>  
+                    </div>
+                </a>
+            </div>
+            <div class="food-menu">
+                <a href="#">
+                    <img src="img/l_14002_elderflower-jelly.jpg" alt>
+                
+                    <div class="food-name">
+                        	<p class='description_content'>ELDERFLOWER JELLY
+                               <span class="currency">&#8369;250</span>
+                            </p>  
+                    </div>
+                </a>
+            </div>
+            <div class="food-menu">
+                <a href="#">
+                    <img src="img/l_14002_elderflower-jelly.jpg" alt>
+                
+                    <div class="food-name">
+                        	<p class='description_content'>ELDERFLOWER JELLY
+                               <span class="currency">&#8369;250</span>
+                            </p>  
+                    </div>
+                </a>
+            </div>
+            <div class="food-menu">
+                <a href="#">
+                    <img src="img/l_14002_elderflower-jelly.jpg" alt>
+                
+                    <div class="food-name">
+                        	<p class='description_content'>ELDERFLOWER JELLY
+                               <span class="currency">&#8369;250</span>
+                            </p>  
+                    </div>
+                </a>
+            </div>
+        </header>
     </div>
   </div>
 
 </div>
     </div>
-  <div class="order-item">flex item 2</div> 
+  <div class="order-item">
+        <div class="header">
+            Table #:
+        </div>
+            <div class="item-order">
+          
+            </div>
+             <center><input type="submit" value="Place Order" class="btn-placeorder"></center>
+     
+    </div> 
 </div>
     </body>
 </html>
