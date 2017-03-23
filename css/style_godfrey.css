@@ -394,6 +394,7 @@ body {
   max-height: 40px;
     background-color: #e6b800;
     font-weight: 100;
+
     
 }
 .worko-tabs .flex-tabs .panel {
@@ -413,6 +414,7 @@ body {
   cursor: hand;
   cursor: pointer;
   border-left: 10px solid #ccc;
+
 }
 .worko-tabs .tab:hover {
   background-color: #fff;
@@ -422,10 +424,12 @@ body {
 #tab-two:checked ~ .tabs #tab-two-label,
 #tab-three:checked ~ .tabs #tab-three-label,
 #tab-four:checked ~ .tabs #tab-four-label {
+
   background-color: #EEE; 
   cursor: default;
   border-left-color: #663300 ;
     
+
 }
 
 #tab-one:checked ~ .tabs #tab-one-panel,
@@ -434,8 +438,7 @@ body {
 #tab-four:checked ~ .tabs #tab-four-panel {
   display: block;
   margin-top: 4%;
-  background-color: #EEE;       
- 
+  background-color: #EEE;
 
 }
 
@@ -558,6 +561,8 @@ header div img {
     font-size: 30px;
     color: black;
     text-align: center;
+    font-weight: 100;
+
 }
 
 .food-menu{
