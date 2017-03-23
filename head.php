@@ -17,11 +17,4 @@
         <link rel="stylesheet" href="fonts/petit.css">
         <link rel="stylesheet" href="fonts/rogue.css">
 
-        <!-- Individual Team member CSS -->
-        <link rel="stylesheet" href="css/style_alec.css">
-        <link rel="stylesheet" href="css/style_andrew.css">
-        <link rel="stylesheet" href="css/style_godfrey.css">
-        <link rel="stylesheet" href="css/style_ja.css">
-        <link rel="stylesheet" href="css/style_jae.css">
-        <link rel="stylesheet" href="css/style_paul.css">
-        <link rel="stylesheet" href="css/style_precious.css">
+    
