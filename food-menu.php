@@ -29,27 +29,28 @@
     <div id="tab-one-panel" class="panel active">
     <header>
             <div class="food-menu">
-                
-                    <img src="img/l_14004_avocado-salsa-cinnamon.jpg" alt id="myImg">
-                
-                
+                <img src="img/l_14004_avocado-salsa-cinnamon.jpg" alt id="myImg">
                     <div class="food-name">
-                        	<p class='description_content'>AVOCADO SALSA WITH GINGER AND GARLIC
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
+                        <p class='description_content'>AVOCADO SALSA WITH GINGER AND GARLIC
+                            <span class="currency">&#8369;250</span>
+                        </p>       
                     </div>
                <div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-                   
-  <div id="caption"></div>
-</div>
+                    <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                    <div class="food-description">
+                        <p class='description_food'>Food Description</p>
+                    </div> 
+                        <div class="food-price">
+                            <p class='description_price'> &#8369;250</p>
+                        </div> 
+  
+                </div>
                 
             </div>
              <div class="food-menu">
                 <a href="#">
-                    <img src="img/l_14572_jar-spinach-spread.jpg" alt>
+                    <img src="img/l_14572_jar-spinach-spread.jpg" alt id="myImg">
                 
                     <div class="food-name">
                         	<p class='description_content'>SPINACH DIP

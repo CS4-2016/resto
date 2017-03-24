@@ -15,29 +15,21 @@
 	<nav class="nav-resto">
 		<img src="img/el-logo.PNG" class="table-logo-resto">
 	</nav>
+	<div class="table-respo">
 	<?php
 		$sql="SELECT * FROM tables ORDER BY id ASC";
 		$db->Query($sql);
 
-		$table=array();
-
 		if($db->result)
 		{
-			while($row=$db->result->fetch_assoc())
-				$table[]=$row;
-		}
+			while($row=$db->result->fetch_assoc()){
 	?>
-	<div class="table-respo">
-		<?php
-			for($x=0; $x<15; $x++)
-			{
-		?>
-		<span class="resto-tables-span <?php echo $table[$x]['status']; ?>">
-			<?php echo $table[$x]['table_number']; ?>
+		<span class="resto-tables-span <?php echo $row['status']; ?>">
+			<?php echo $row['table_number']; ?>
 			<span class="span-img">
 				<?php
-					$capacity=$table[$x]['capacity'];
-					for($y=0;$y<$capacity;$y++)
+					$capacity=$row['capacity'];
+					for($x=0;$x<$capacity;$x++)
 					{
 				?>
 					<img class="img-resto-table" src="img/customer.png">
@@ -47,9 +39,11 @@
 			</span>
 		</span>
 		<?php
+				}
 			}
 		?>
 	</div>
 	<?php require_once("scripts.php"); ?>
+	<script type="text/javascript" src="js/tables.js"></script>
 </body>
 </html>

@@ -16,7 +16,30 @@
                     
                 </div>
                 <div class="flex-item1">
-            
+                  <article class="main-content">
+                    <div class="form-group image">
+                      <div class="image-dish">
+                        <img class="img-responsive img-thumbnail" id="blah" src="http://placehold.it/200" alt="your image" style="max-width:200px; max-height:200px;"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="image-dish">
+                        <input type='file' onchange="readURL(this);" class="dish-image" style=""/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label>Dish name</label>
+                      <input type="text" name="textDish" class="input-control"/>
+                    </div>
+                    <div class="form-group">
+                      <label>Price</label>
+                      <input type="number" min="0" name="textPrice" class="input-control"/>
+                    </div>
+                    <div class="form-group">
+                      <label>Description</label>
+                      <textarea class="input-control" name="textAddress"> </textarea>
+                    </div>
+                  </article>
                 </div>  
             </div>
 
