@@ -8,6 +8,7 @@
 
     if($db->result){
         while($row = $db->result->fetch_assoc()){ ?>
+            <div data-i="<?php echo $row['username']; ?>" onclick="manage_users.view('<?php echo $row['id']; ?>')" class="user-item"><?php echo $row['username']; ?>
             </div> <?php
         }
     }
