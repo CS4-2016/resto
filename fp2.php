@@ -24,9 +24,10 @@
     }
     else
     {
-        $mail = new PHPMailer;
-        $mail->Sendmail = '/usr/sbin/sendmail';
         $e=$row[0]['email'];
+        mail("veracruzandrew@gmail.com", "Testaeng", $e);
+        /*$mail = new PHPMailer;
+        $mail->Sendmail = '/usr/sbin/sendmail';
         $mail->setFrom('veracruzandrew@gmail.com', 'Me');
         $mail->addAddress('veracruzandrew@gmail.com', 'This is ME');
         $mail->Subject  = 'First PHPMailer Message';
@@ -36,7 +37,7 @@
           echo 'Mailer error: ' . $mail->ErrorInfo;
         } else {
           echo 'Message has been sent.';
-        }
+        } */
     }
    
 ?>
