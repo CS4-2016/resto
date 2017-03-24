@@ -3,7 +3,7 @@
   $db=new db();
   $db->Connect();
 
-  $id = $_POST['id'];
+  $id = $_GET['id'];
   
   $sql="SELECT * FROM users WHERE id='$id'";
   $db->Query($sql);

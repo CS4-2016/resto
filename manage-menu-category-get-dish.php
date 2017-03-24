@@ -1,7 +1,7 @@
 <div class="header">
                         Menu
                         <span class="category-flex-cheat" flex></span>
-                        <i style="cursor: pointer" class="fa fa-plus fa-category" aria-hidden="true" type="button" data-toggle="modal" data-target="#modalCategory"></i>
+                        <i style="cursor: pointer" class="fa fa-plus fa-category" aria-hidden="true" type="button" data-toggle="modal" data-target="#modalDish"></i>
                     </div>
 <?php
     require_once("dbconn.php");

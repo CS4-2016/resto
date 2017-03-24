@@ -1,4 +1,4 @@
-.category-wrapper, .dish-item, .category-item {
+.dish-item, .category-item {
     padding: 10px;
     font-size: 18px;
     text-transform: capitalize;
@@ -52,4 +52,10 @@
 
 .admin-sidebar-a:hover{
     color:white;
+}
+.user-item {
+    padding: 10px;
+    font-size: 18px;
+    min-width: 150px;
+    cursor:pointer;
 }

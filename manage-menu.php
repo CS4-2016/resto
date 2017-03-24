@@ -12,7 +12,7 @@
 
                      </div>
                 </div>
-                <div class="flex-item dish">
+                <div class="flex-item animated fadeInLeft dish">
                     
                 </div>
                 <div class="flex-item1">

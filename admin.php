@@ -9,6 +9,7 @@
     <?php 
         require_once("head.php"); 
     ?>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style_godfrey.css">
     <link rel="stylesheet" href="css/style_paul2.css">
  
@@ -26,7 +27,7 @@
       <li><span class="admin-navigation-span">NAVIGATION</span></li>
       <li><a class="admin-sidebar-a" onclick="manage_menu.show()">Manage Menu</a></li>
       <li><a class="admin-sidebar-a" onclick="manage_order.show();">Manage Orders</a></li>
-      <li><a class="admin-sidebar-a" onclick="manage_user.show()">Manage Users</a></li>
+      <li><a class="admin-sidebar-a" onclick="manage_users.show()">Manage Users</a></li>
       <li><a class="admin-sidebar-a">Logout</a></li>
     </ul>
   </nav>

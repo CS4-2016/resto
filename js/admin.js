@@ -18,16 +18,21 @@ window.manage_menu = {
     }
 }
 
-window.manage_user = {
+window.manage_users = {
     show: function (){
-        $.get("manage-user.php",function(ret){
+        $.get("manage-users.php",function(ret){
             $('.content-wrapper').html(ret);
-                manage_user.getAll();
+                manage_users.getAll();
         });
     },
     getAll: function(){
         $.get("manage-user-list.php", function(ret){
-            $(".category-wrapper").html(ret);
+            $(".users-wrapper").html(ret);
+        });
+    },
+    view: function(c){
+        $.get("manage-user-view.php?id="+c, function(ret){
+            $(".user-info").html(ret); 
         });
     }
 }
