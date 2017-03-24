@@ -27,8 +27,29 @@
 .admin-banner{
     width: 100%;
     height: 30px;
+    font-family:'Rouge Script';
+    font-size: 30px;
+    padding:10px;
+    text-align:center;
+}
+
+.admin-header-el-siete{
+    background-image: url(../img/sidebar.jpg);
+    z-index:999;
+}
+
+.admin-navigation-span{
+    text-transform: uppercase;
+    height: 20px;
+    width:100%;
 }
 
 .admin-username-header{
-    
+    width:100%;
+    margin:0;
+    display:inline-block;
+}
+
+.admin-sidebar-a:hover{
+    color:white;
 }
