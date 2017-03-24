@@ -6,6 +6,21 @@ html, body {
 	font-family: sans-serif;
 }
 
+.grad{
+	position: fixed;
+	top: -1px;
+	left: 0px;
+	right:0px;
+	bottom: 0px;
+	width: auto;
+	height: auto;
+	background-image: url(../img/pexels-photo-279835.jpeg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	opacity: 0.9;
+}
 .grad-register{
 	position: fixed;
 	top: -1px;
