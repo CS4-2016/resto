@@ -27,9 +27,9 @@
                         <form method="post" action="login-authentication.php">
                             <center>
                                 <label style="margin-top: 30px;" for="username"><i class="fa fa-user"></i> Username</label>
-                                <input class="login-text-box" type="text" id="username" name="username" <?php if(!empty($_SESSION['login-attempt']) && $_SESSION['login-attempt'] == 'username'){ echo "value='".$_SESSION['username-attempt']."'"; }?>>
+                                <input class="login-text-box" type="text" id="username" name="username" <?php if(!empty($_SESSION['login-attempt']) && $_SESSION['login-attempt'] == 'username'){ echo "value='".$_SESSION['username-attempt']."'"; }?> required>
                                 <label style="margin-top: 15px;" for="password"><i class="fa fa-key"></i> Password</label>
-                                <input class="login-text-box login-password-text-box" type="password" id="password" name="password"><i class="fa fa-eye show-off" id="showPassword"></i>
+                                <input class="login-text-box login-password-text-box" type="password" id="password" name="password" required><i class="fa fa-eye show-off" id="showPassword"></i>
                                 <?php if(!empty($_SESSION['login-attempt']) && $_SESSION['login-attempt'] == 'username'){ ?>
                                     <span class="login-error">Password is incorrect.</span>
     <?php 
