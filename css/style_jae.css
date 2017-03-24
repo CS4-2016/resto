@@ -21,6 +21,21 @@ html, body {
 	background-size: cover;
 	opacity: 0.9;
 }
+.grad-forgot-password-page{
+	position: fixed;
+	top: -1px;
+	left: 0px;
+	right:0px;
+	bottom: 0px;
+	width: auto;
+	height: auto;
+	background-color: #C0C0C0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	opacity: 0.9;
+}
 .grad-register{
 	position: fixed;
 	top: -1px;
@@ -315,4 +330,20 @@ input[type="email"]:hover {
 	height: 50px;
 	width: 50px;
 	margin-top: .5%;
+}
+.container-resto-forgotpassword {
+    position: relative;
+    width: 370px;
+    height: 345px;
+	background: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .1);
+}
+#forgotpassword-btn-send {
+   width: 100%;
+}
+
+#forgotpassword-btn-cancel {
+    width: 100%;
 }

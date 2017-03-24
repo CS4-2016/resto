@@ -38,10 +38,14 @@
     } ?>
                             </center>
                             <center>
+                                
+                            <a href="forgot-password.php" >Forgot my password</a>
+
                                 <input type="submit" value="LOGIN" class="btn-login">
                                 <a href="register.php"><input type="button" value="REGISTER" class="btn-register"></a>
                             </center>
                         </form>
+                        
                 </div>
                 </center>
                 
