@@ -79,3 +79,12 @@ textarea {
    color: lightblue;
    text-decoration: none;
  }
+
+.dish-image{
+padding:10px;
+background:#2d2d2d;
+}
+
+.image{
+  margin-right:-10000px;
+}

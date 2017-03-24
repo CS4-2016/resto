@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style_godfrey.css">
     <link rel="stylesheet" href="css/style_paul2.css">
+    <link rel="stylesheet" href="css/style_alec.css">
  
 </head>
 
@@ -46,3 +47,4 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="js/prefixfree.min.js"></script>
 <script type="text/javascript" src="js/admin.js"></script>
+<script type="text/javascript" src="js/image-preview.js"></script>
