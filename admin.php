@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style_godfrey.css">
     <link rel="stylesheet" href="css/style_paul2.css">
+    <link rel="stylesheet" href="css/style_alec.css">
  
 </head>
 
