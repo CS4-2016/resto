@@ -8,3 +8,4 @@
     <script type="text/javascript" src="js/image-drag-disabler.js"></script>
     <script type="text/javascript" src="js/header-user-click.js"></script>
     <script src="js/prefixfree.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>

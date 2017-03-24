@@ -41,6 +41,7 @@
   
 </body>
 </html>
+
 <?php 
     require_once("scripts.php");
 ?>
