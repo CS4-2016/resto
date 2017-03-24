@@ -33,6 +33,8 @@
                     <input type="submit" value="Register" name="register" class="btnregister" />
                     </form>
                   </div>
+                    
+                
                 </div> 
             </div>         
         </div> 
