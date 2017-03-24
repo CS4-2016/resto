@@ -11,7 +11,7 @@
     </head>
     <body>
     <div class="body">
-		<div class="grad">
+		<div class="grad-register">
             <div class="login-wrapper">
                 <center>
                     <div class="login-header-register">
@@ -20,7 +20,7 @@
                 </center>
                 <div class="body-content">
                   <div class="module">
-                      <div class="register-p">Create an account</div>
+                     <center> <div class="register-p">Create an account</div></center>
                     <form class="form" action="form.php" method="post" enctype="multipart/form-data" autocomplete="off">
                     <div class="alert alert-error"></div>
                     <input type="text" class="register-form-name" placeholder="First Name" name="firstname" required />

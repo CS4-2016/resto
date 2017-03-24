@@ -6,7 +6,7 @@ html, body {
 	font-family: sans-serif;
 }
 
-.grad{
+.grad-register{
 	position: fixed;
 	top: -1px;
 	left: 0px;
@@ -14,7 +14,7 @@ html, body {
 	bottom: 0px;
 	width: auto;
 	height: auto;
-	background-image: url(../img/pexels-photo-279835.jpeg);
+	background-image: url(../img/pexels-photo-196519.jpeg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -169,8 +169,8 @@ input::selection {
 }
 
 .body-content{
-    min-height: 340px;
-  width:460px;
+    min-height: 350px;
+  width:510px;
   margin-left:auto;
   margin-right:auto; 
   background: white;
@@ -271,7 +271,7 @@ input[type="email"]:hover {
 }
 .login-header-register{
     position: relative;
-    width:450px;
+    width:510px;
     background-color: rgba(0, 0, 0, 0.6);
     text-shadow:
     -2px -2px 0 #000,
@@ -291,8 +291,9 @@ input[type="email"]:hover {
 }
 
 .register-p {
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 6px;
+   font-family: 'Rouge-Script';
 }
 
 .table-logo-resto {
