@@ -21,7 +21,8 @@
   <nav>
 
     <header>
-        <?php echo $_SESSION['username']; ?> 
+        <span class="admin-banner el-img"> El Siete </span>
+        <span class="admin-username-header"><?php echo $_SESSION['username']; ?></span>
     </header>
 
     <ul>
@@ -42,7 +43,6 @@
 </body>
 </html>
 
-<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script src="js/prefixfree.min.js"></script>
-<script type="text/javascript" src="js/admin.js"></script>
+<?php 
+    require_once("scripts.php");
+?>

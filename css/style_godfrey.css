@@ -65,15 +65,10 @@ nav header span {
   height: 36px;
   margin: 0 10px 0 0;
   vertical-align: middle;
-  border: 1px solid #fff;
+  
 }
 
-nav header span:before {
-  content: '\f007';
-  font: normal 20px fontawesome;
-  top: 7px;
-  left: 9px;
-}
+
 
 nav header a:before {
   content: '\f08b';

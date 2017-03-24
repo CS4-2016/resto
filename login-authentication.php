@@ -26,7 +26,7 @@
                 
                 if($type == 'admin'){
                     header("Location: admin.php");    
-                } else if($type == 'waiter'){
+                } else{
                     header("Location: tables.php");    
                 } 
             }

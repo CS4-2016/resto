@@ -1,11 +1,7 @@
 $(document).ready(function(){
-   
     setInterval(function(){
-        
         manage_menu.getAll();
-        
-    },2000);
-    
+    },5000);
 });
 
 window.manage_menu = {
@@ -46,7 +42,7 @@ window.dish = {
             manage_menu.getAll();
         });
     },
-    add: function(){
-        
-    }
+//    add: function(){
+//        
+//    }
 }
