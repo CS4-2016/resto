@@ -52,9 +52,10 @@ nav {
 nav header {
   position: relative;
   height: 80px;
+  padding: 20px 0 0 15px;
   font-size: 16px;
   color: #fff;
-  background-image: url(../img/sidebar.jpg);
+  background: #333333;
 }
 
 nav header span {
@@ -64,10 +65,15 @@ nav header span {
   height: 36px;
   margin: 0 10px 0 0;
   vertical-align: middle;
-  
+  border: 1px solid #fff;
 }
 
-
+nav header span:before {
+  content: '\f007';
+  font: normal 20px fontawesome;
+  top: 7px;
+  left: 9px;
+}
 
 nav header a:before {
   content: '\f08b';
@@ -79,7 +85,6 @@ nav header a:before {
 nav ul span {
   display: block;
   padding: 15px;
-  padding-bottom:25px;
   color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
   border-bottom: 1px solid #333333;
@@ -585,47 +590,6 @@ p.description_content{
 	padding: 2%;
 	font-size: 14px;
 }
-
-div.food-description{
-	position:absolute; /* absolute position (so we can position it where we want)*/
-	bottom:0px; /* position will be on bottom */
-	left:0px;
-	width:25%;
-    height: 100%;  
-    margin-left: 75%;
-	/* styling bellow */
-	background-color:black;
-	color:white;
-	opacity:0.6; /* transparency */
-	filter:alpha(opacity=60); /* IE transparency */
-}
-
-p.description_food{
-	padding-top: 20%;
-    padding-left: 5%;
-	font-size: 14px;
-}
-
-div.food-price{
-	position:absolute; /* absolute position (so we can position it where we want)*/
-	bottom:0px; /* position will be on bottom */
-	left:0px;
-	width:15%;
-    height: 20%;  
-	/* styling bellow */
-    margin-left: 2%;
-	background-color:black;
-	color:white;
-	opacity:0.6; /* transparency */
-	filter:alpha(opacity=60); /* IE transparency */
-}
-
-p.description_price{
-	padding: 8%;
-	font-size: 50px;
-}
-
-
 
 .currency{
     float: right;
