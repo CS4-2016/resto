@@ -1,11 +1,7 @@
 $(document).ready(function(){
-   
     setInterval(function(){
-        
-        manage_menu.getAll();
-        
+        manage_menu.getAll(); 
     },2000);
-    
 });
 
 window.manage_menu = {
@@ -22,6 +18,14 @@ window.manage_menu = {
     }
 }
 
+window.manage_users = {
+    show: function(){
+        $.get("manage-users.php", function(ret){
+            $('.content-wrapper').html(ret);
+            //manage_users.getAll();
+        });
+    },
+}
 window.category = {
     getAll: function(c){
         
@@ -46,7 +50,7 @@ window.dish = {
             manage_menu.getAll();
         });
     },
-    add: function(){
-        
-    }
+//    add: function(){
+//        
+//    }
 }

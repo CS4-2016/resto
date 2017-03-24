@@ -18,16 +18,16 @@
 <body style="height:100%;">
   <div class="wrapper">
 
-  <nav>
-
+  <nav style="z-index:9999">
     <header>
-        <?php echo $_SESSION['username']; ?> 
+        <span>El Siete</span>
+        <span><?php echo $_SESSION['username']; ?></span>
     </header>
 
     <ul>
       <li><span>Navigation</span></li>
-      <li><a class="active" onclick="manage_menu.show()">Manage Menu</a></li>
-      <li><a href="manage-user.php">Manage User</a></li>
+      <li><a onclick="manage_menu.show()">Manage Menu</a></li>
+      <li><a onclick="manage_users.show()">Manage User</a></li>
       <li><a>Logout</a></li>
     </ul>
 

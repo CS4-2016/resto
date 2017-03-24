@@ -58,19 +58,11 @@ nav header {
 nav header span {
   position: relative;
   display: inline-block;
-  width: 36px;
-  height: 36px;
   margin: 0 10px 0 0;
   vertical-align: middle;
-  border: 1px solid #fff;
 }
 
-nav header span:before {
-  content: '\f007';
-  font: normal 20px fontawesome;
-  top: 7px;
-  left: 9px;
-}
+
 
 nav header a:before {
   content: '\f08b';
@@ -84,7 +76,6 @@ nav ul span {
   padding: 15px;
   color: rgba(255,255,255,.5);
   text-transform: uppercase;
-  border-bottom: 1px solid $color-d;
 }
 
 nav ul a {
