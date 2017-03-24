@@ -65,6 +65,10 @@
             </div>
     </div>
 </div>
+  <?php
+    require_once('scripts.php');
+  ?>
+
 
 <script>
   function getUserDetails(id){

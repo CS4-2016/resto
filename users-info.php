@@ -18,16 +18,20 @@
 </div>
   <article class="main-content">
     <div class="form-group">
+      <label>Username</label>
+      <input name="textFname" class="input-control" value="<?php echo $row['username']; ?>" disabled/>
+    </div>
+    <div class="form-group">
       <label>First Name</label>
       <input name="textFname" class="input-control" value="<?php echo $row['firstname']; ?>" disabled/>
-
-      <label class="right-inline">Last Name</label>
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
       <input name="textLname" class="input-control" value="<?php echo $row['lastname']; ?>" disabled/>
     </div>
-
     <div class="form-group">
       <label>Position</label>
-      <input name="textPosition" class="input-control" style="flex: 6" value="<?php echo $row['type']; ?>" disabled/>  
+      <input name="textPosition" class="input-control" value="<?php echo $row['type']; ?>" disabled/>  
     </div>
 
     <div class="form-group">
@@ -36,8 +40,11 @@
     </div>
 
     <div class="form-group">
-      <label>Email, Contact Number</label>
-      <input name="textContact" class="input-control" style="flex: 6" value="<?php echo $row['email']; ?>" disabled />    
-      <input name="textEmail" class="input-control" style="flex:1" value="<?php echo $row['contact']; ?>" disabled />    
+      <label>Email</label>
+      <input name="textEmail" class="input-control" value="<?php echo $row['email']; ?>" disabled />    
+    </div>
+    <div class="form-group">
+      <label>Contact Number</label>
+      <input name="textContact" class="input-control" value="<?php echo $row['contact']; ?>" disabled />    
     </div>
   </article>
