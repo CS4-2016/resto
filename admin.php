@@ -19,20 +19,18 @@
 <body style="height:100%;">
   <div class="wrapper">
 
-  <nav>
-
+  <nav class="admin-header-el-siete">
     <header>
         <span class="admin-banner el-img"> El Siete </span>
-        <span class="admin-username-header"><?php echo $_SESSION['username']; ?></span>
+        <p class="admin-username-header"><i class="fa fa-user" aria="hidden"></i><?php echo $_SESSION['username']; ?></p>
     </header>
-
     <ul>
-      <li><span>Navigation</span></li>
-      <li><a class="active" onclick="manage_menu.show()">Manage Menu</a></li>
-      <li><a href="manage-user.php">Manage User</a></li>
-      <li><a>Logout</a></li>
+      <li><span class="admin-navigation-span">NAVIGATION</span></li>
+      <li><a class="admin-sidebar-a" onclick="manage_menu.show()">Manage Menu</a></li>
+      <li><a class="admin-sidebar-a" onclick="manage_order.show();">Manage Orders</a></li>
+      <li><a class="admin-sidebar-a" onclick="manage_users.show()">Manage Users</a></li>
+      <li><a class="admin-sidebar-a">Logout</a></li>
     </ul>
-
   </nav>
 
     <div class="content-wrapper">
