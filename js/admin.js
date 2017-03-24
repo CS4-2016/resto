@@ -1,11 +1,7 @@
 $(document).ready(function(){
-   
     setInterval(function(){
-        
         manage_menu.getAll();
-        
     },2000);
-    
 });
 
 window.manage_menu = {
