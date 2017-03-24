@@ -13,7 +13,6 @@
         <link rel="stylesheet" href="css/style_paul.css">
     </head>
     <body>
-    
      <div class="body">
 		<div class="grad-forgot-password-page">
             <div class="login-wrapper">
@@ -26,15 +25,13 @@
 
                                 <label style="margin-top: 30px;" for="email"><i class="fa fa-user"></i> Email</label>
                                 <input class="login-text-box" type="text" id="email" name="email" required>
-                        
                             </center>
                             <center>
                                 <input type="submit" value="SEND" class="btn-login">
                                 <a href="index.php"><input type="button" value="CANCEL" class="btn-register"></a>
                             </center>
                         </form>
-                        
-                </div>
+                    </div>
                 </center>
                 
           
