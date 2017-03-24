@@ -18,7 +18,7 @@
 <body style="height:100%;">
   <div class="wrapper">
 
-  <nav style="z-index:9999">
+  <nav class="nav-admin-el-siete">
     <header>
         <span>El Siete</span>
         <span><?php echo $_SESSION['username']; ?></span>

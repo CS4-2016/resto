@@ -29,3 +29,7 @@
     height: 30px;
     
 }
+.nav-admin-el-siete {
+    z-index:9999;
+    background-image: url(../img/sidebar.jpg);
+}
