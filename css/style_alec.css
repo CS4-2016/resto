@@ -63,6 +63,9 @@ textarea {
      padding-right: 0;
      padding-left: 0;   
    }
+  .image-dish{ 
+   margin-left:10%;
+  }
  }
 
  .delete-icon{
@@ -81,10 +84,9 @@ textarea {
  }
 
 .dish-image{
-padding:10px;
-background:#2d2d2d;
+  padding:10px;
+}
+.image-dish{ 
+  margin-left:40%;
 }
 
-.image{
-  margin-right:-10000px;
-}

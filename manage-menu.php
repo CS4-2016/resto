@@ -18,8 +18,14 @@
                 <div class="flex-item1">
                   <article class="main-content">
                     <div class="form-group image">
-                      <img class="img-responsive img-thumbnail" id="blah" src="http://placehold.it/200" alt="your image" style="max-width:200px; max-height:200px;"/>
-                      <input type='file' onchange="readURL(this);" class="dish-image" />
+                      <div class="image-dish">
+                        <img class="img-responsive img-thumbnail" id="blah" src="http://placehold.it/200" alt="your image" style="max-width:200px; max-height:200px;"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="image-dish">
+                        <input type='file' onchange="readURL(this);" class="dish-image" style=""/>
+                      </div>
                     </div>
                     <div class="form-group">
                       <label>Dish name</label>
