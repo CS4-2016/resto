@@ -1,3 +1,20 @@
+<?php
+    require_once("dbcon-pdo.php");
+    $numbers=['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
+    $tabRow=array();
+    try
+    {
+        $dbcon=new PDO('mysql:host='.$GLOBALS['host'].';dbname='.$GLOBALS['dbase'], $GLOBALS['lin'], $GLOBALS['pwd']);
+        $dbcon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $state=$dbcon->prepare("SELECT category_name FROM menu_category");
+        $state->execute();
+        $tabRow=$state->fetchAll();
+    }
+    catch(PDOException $e)
+    {
+        $e->getMessage();
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,18 +29,19 @@
 <div class="menu-container">
   <div class="food-item">
       <div class="worko-tabs">
-
-  <input class="state" type="radio" title="tab-one" name="tabs-state" id="tab-one" checked />
+  <?php for($i=0;$i<count($tabRow);$i++) echo '<input class="state" type="radio" name="tabs-state" title="tab-'.$numbers[$i].'" id="tab-'.$numbers[$i].'">'; ?>
+<!--  <input class="state" type="radio" title="tab-one" name="tabs-state" id="tab-one" checked />
   <input class="state" type="radio" title="tab-two" name="tabs-state" id="tab-two" />
   <input class="state" type="radio" title="tab-three" name="tabs-state" id="tab-three" />
-  <input class="state" type="radio" title="tab-four" name="tabs-state" id="tab-four" />
+  <input class="state" type="radio" title="tab-four" name="tabs-state" id="tab-four" /> -->
 
   <div class="tabs flex-tabs">
     <div class="menu-header">
-        <label for="tab-one" id="tab-one-label" class="tab">Appetizer</label>
+        <?php for($i=0;$i<count($tabRow);$i++) echo '<label for="tab-'.$numbers[$i].'" id="tab-'.$numbers[$i].'-label" class="tab">'.$tabRow[$i]['category_name'].'</label>'; ?>
+    <!--    <label for="tab-one" id="tab-one-label" class="tab">Appetizer</label>
         <label for="tab-two" id="tab-two-label" class="tab">Main Course</label>
         <label for="tab-three" id="tab-three-label" class="tab">Beverage</label>
-        <label for="tab-four" id="tab-four-label" class="tab">Dessert</label>
+        <label for="tab-four" id="tab-four-label" class="tab">Dessert</label> -->
     </div>
 
     <div id="tab-one-panel" class="panel active">
