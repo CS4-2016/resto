@@ -25,18 +25,20 @@
 			while($row=$db->result->fetch_assoc()){
 	?>
 		<span class="resto-tables-span <?php echo $row['status']; ?>">
-			<?php echo $row['table_number']; ?>
-			<span class="span-img">
-				<?php
-					$capacity=$row['capacity'];
-					for($x=0;$x<$capacity;$x++)
-					{
-				?>
-					<img class="img-resto-table" src="img/customer.png">
-				<?php
-					}
-				?>
-			</span>
+			<a class="table-link" href="food-menu.php?table_number=<?php echo $row['table_number']; ?>">
+				<?php echo $row['table_number']; ?>
+				<span class="span-img">
+					<?php
+						$capacity=$row['capacity'];
+						for($x=0;$x<$capacity;$x++)
+						{
+					?>
+						<img class="img-resto-table" src="img/customer.png">
+					<?php
+						}
+					?>
+				</span>
+			</a>
 		</span>
 		<?php
 				}
