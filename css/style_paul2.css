@@ -59,3 +59,13 @@
     min-width: 150px;
     cursor:pointer;
 }
+
+#modalCategory {
+    z-index: 9999;
+}
+
+.modal{
+    margin-top:0px;
+    width:100%;
+    z-index:9999;
+}

@@ -60,7 +60,18 @@ window.dish = {
             manage_menu.getAll();
         });
     },
-//    add: function(){
-//        
-//    }
+    view: function(c){
+        $.get("manage-menu-dish.php?id="+c, function(ret){
+            $(".flex-item1").html(ret); 
+        });
+    }
+}
+
+window.manage_order = {
+    show: function (){
+        $.get("manage-order.php",function(ret){
+            $('.content-wrapper').html(ret);
+            //manage_order.getAll();
+        });
+    },
 }

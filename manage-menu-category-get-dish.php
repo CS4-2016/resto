@@ -16,7 +16,7 @@
     if($db->result){
         while($row = $db->result->fetch_assoc()){ ?>
 
-            <div data-i="<?php echo $row['name']; ?>" onclick="dish.get('<?php echo $row['id']; ?>')" class="dish-item"><?php echo ucwords(strtolower($row['name'])); ?>
+            <div data-i="<?php echo $row['name']; ?>" onclick="dish.view('<?php echo $row['id']; ?>')" class="dish-item"><?php echo ucwords(strtolower($row['name'])); ?>
             </div> <?php
         }
     }
