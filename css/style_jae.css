@@ -71,10 +71,6 @@ html, body {
 	display:flex;
 }
 
-.occupied {
-	background-color: aliceblue;
-}
-
 .nav-resto {
 	background-color: black;
 	width: 100%;
