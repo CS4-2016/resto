@@ -8,10 +8,13 @@
     
     $db->Query($SQL);
     
-    if($db->result){
+    if($db->result)
         $row = $db->result->fetch_assoc();
-    }
+    
 ?>
+<div class="header">
+    Dish Information
+</div>
 <article class="main-content">
                     <div class="form-group image">
                       <div class="image-dish">

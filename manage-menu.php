@@ -15,7 +15,7 @@
                 <div class="flex-item animated fadeInLeft dish">
   
                 </div>
-                <div class="flex-item1">
+                <div class="flex-information flex-item1">
                   
                 </div>  
             </div>

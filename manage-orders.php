@@ -6,14 +6,11 @@
                     <div class="header">
                         Tables
                     </div>
-                    <div class="">
+                    <div class="orders-wrapper">
                         
-                     </div>
+                    </div>
                 </div>
-                <div class="flex-item animated fadeInLeft dish">
-  
-                </div>
-                <div class="flex-item1">
+                <div class="flex-information user-info">
                   
-                </div>  
+              </div>  
             </div>
