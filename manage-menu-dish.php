@@ -38,7 +38,7 @@
       <textarea class="input-control" id="textAddress" name="description"><?php echo $row['description']; ?></textarea>
     </div>
     <input type="hidden" id="hiddenDishId" name="dish_id" value="<?php echo $id; ?>" />
-    <center><input class="btn btn-primary" type="submit" id="sub" value="SAVE"></center>
+    <center><input class="btn btn-el-siete" type="submit" id="sub" value="Save"></center>
         </form>  
 </article>
   
