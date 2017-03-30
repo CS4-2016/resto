@@ -15,7 +15,6 @@
 <div class="header">
     Dish Information
 </div>
-
 <article class="main-content">
     <form action="change-dish-info.php" enctype="multipart/form-data" method="POST">
     <div class="form-group image">

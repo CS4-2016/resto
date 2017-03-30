@@ -7,8 +7,11 @@
 
     $sql="SELECT * FROM `orders` WHERE tray_id='$id'";
     $db->Query($sql);
-
     $orderList = Array();
+    
+    if($db->result)
+        while($row = $db->result->fetch_assoc())
+            $orderList[] = $row;   
 ?>
 <div class="header">
     Orders 
@@ -23,44 +26,30 @@
       </tr>
     </thead>
     <tbody>
-        <?php if($db->result)
-            while($row = $db->result->fetch_assoc()){
-                $orderList[] = $row; ?>
+
+        <?php for($x = 0; $x<count($orderList); $x++){ 
+                $menu_id = $orderList[$x]['menu_id'];
+                $SQL = "SELECT `name` FROM `menu` WHERE `id` = '$menu_id'"; 
+                
+                $db->Query($SQL);
+                if($db->result)
+                    $name = $db->result->fetch_assoc();                
+        ?>
                 <tr>
-                    <td>Default</td>
-                    <td>Defaultson</td>
-                    <td>def@somemail.com</td>
-                </tr>      
-        } ?>
-<!--
-      <tr class="success">
-        <td>Success</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr class="danger">
-        <td>Danger</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr class="info">
-        <td>Info</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
-      <tr class="warning">
-        <td>Warning</td>
-        <td>Refs</td>
-        <td>bo@example.com</td>
-      </tr>
-      <tr class="active">
-        <td>Active</td>
-        <td>Activeson</td>
-        <td>act@example.com</td>
-      </tr>
--->
+                    <td><?php echo $name['name']; ?></td>
+                    <td><?php echo $orderList[$x]['qty']; ?></td>
+                    <td>
+                        <?php if($orderList[$x]['status'] == 'not_yet_served'){ ?>
+                            <center><button onclick="manage_orders.serve(<?php echo $orderList[$x]['id']; ?>)" style="text-align: center;" class="btn btn-warning">Serve</button>
+                            &nbsp;&nbsp;
+                            <button onclick="manage_orders.cancel(<?php echo $orderList[$x]['id']; ?>)" class="btn btn-danger">Cancel</button>
+                        <?php } 
+                              else if($orderList[$x]['status'] == 'served'){ ?>
+                            <center><button class="btn btn-success">Served</button></center>
+                        <?php } ?>
+                     </td></center>
+                </tr>
+        <?php } ?>
     </tbody>
   </table>
-</article>
 
-  

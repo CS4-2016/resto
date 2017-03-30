@@ -83,5 +83,9 @@ window.manage_orders = {
         $.get("manage-orders-view.php?id="+c, function(ret){
             $(".user-info").html(ret); 
         });
+    },
+    serve: function(c){
+        $.get("manage-orders-serve.php?id="+c);
+        manage_orders.view();
     }
 }
