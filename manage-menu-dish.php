@@ -18,15 +18,13 @@
 <article class="main-content">
     <form action="change-dish-info.php" enctype="multipart/form-data" method="POST">
     <div class="form-group image">
-      <div class="image-dish">
-        <img class="img-responsive img-thumbnail" id="blah" src="menu-img/<?php echo $row['photo']; ?>" alt="your image" style="max-width:200px; max-height:200px;"/>
-      </div>
+        <img class="img-responsive img-thumbnail" id="blah" src="menu-img/<?php echo $row['photo']; ?>" alt="your image" style="width: auto; max-height: 200px; margin-left: auto; margin-right: auto; text-align-center;"/>
     </div>
     <div class="form-group">
-      <div class="image-dish">
-        <input type='file' onchange="readURL(this);" class="dish-image" name="dish-image" style=""/>
-      </div>
-    </div>
+        <label class="btn btn-default btn-file" style="margin-left: auto; margin-right: auto; text-align-center;">
+            Choose File... <input type="file" class="dish-change" id="dishImage" name="dish-image" onchange="readURL(this);" style="display: none;">
+        </label>
+    </div>    
     <div class="form-group">
       <label>Dish name</label>
       <input type="text" id="textDish" value="<?php echo $row['name']; ?>" name="textDish" class="input-control"/>
@@ -37,10 +35,10 @@
     </div>
     <div class="form-group">
       <label>Description</label>
-      <textarea class="input-control" id="textAddress" name="textAddress"><?php echo $row['description']; ?></textarea>
+      <textarea class="input-control" id="textAddress" name="description"><?php echo $row['description']; ?></textarea>
     </div>
-    <input type="hidden" name="dish-id" value="<?php echo $id; ?>" />
-    <input type="submit" id="sub"/>
+    <input type="hidden" id="hiddenDishId" name="dish_id" value="<?php echo $id; ?>" />
+    <center><input class="btn btn-primary" type="submit" id="sub" value="SAVE"></center>
         </form>  
 </article>
   

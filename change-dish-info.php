@@ -5,10 +5,10 @@
         print_r($_POST);
     echo "</pre>";
 
-    $id=$_POST['dish-id'];
+    $id=$_POST['dish_id'];
     $dish=$_POST['textDish'];
     $price=$_POST['textPrice'];
-    $address=$_POST['textAddress'];
+    $address=$_POST['description'];
     
     $image=null;
     $info=null;
@@ -42,4 +42,5 @@
         $e->getMessage();
     }
     
+    header("Location:admin.php");
 ?>

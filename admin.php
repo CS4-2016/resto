@@ -26,7 +26,7 @@
   <nav class="admin-header-el-siete">
     <header>
         <span class="admin-banner el-img"> El Siete </span>
-        <p class="admin-username-header"><i class="fa fa-user" aria="hidden"></i><?php echo $_SESSION['username']; ?></p>
+        <span class="admin-username-header"><span style="color:white">Logged in as:</span> <i class="fa fa-user" aria="hidden" style="position: relative; top: -13px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $_SESSION['username']; ?></span>
     </header>
     <ul>
       <li><span class="admin-navigation-span">NAVIGATION</span></li>

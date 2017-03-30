@@ -49,28 +49,9 @@ nav {
 
 nav header {
   position: relative;
-  height: 80px;
-  padding: 20px 0 0 15px;
+  height: 100px;
   font-size: 16px;
   color: #fff;
-  background: #333333;
-}
-
-nav header span {
-  position: relative;
-  display: inline-block;
-  width: 36px;
-  height: 36px;
-  margin: 0 10px 0 0;
-  vertical-align: middle;
-  border: 1px solid #fff;
-}
-
-nav header span:before {
-  content: '\f007';
-  font: normal 20px fontawesome;
-  top: 7px;
-  left: 9px;
 }
 
 nav header a:before {
@@ -98,7 +79,7 @@ nav ul a {
 
 nav ul a:hover,
 nav ul a.active {
-  background: #535353;
+  background: #e6b800;
 }
 
 nav ul a:before {
@@ -245,8 +226,10 @@ a .icon:hover{
   line-height: 76px;
   font-size: 24px;
   font-weight: 400;
-  background: #ddd;
+  background-image:url(../img/sidebar.jpg);
+    color:white;
   width: 102%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 
@@ -270,9 +253,8 @@ a .icon:hover{
     font-size: 18px;
     text-transform: capitalize;
     min-width: 150px;
-    background-color: white;
     z-index: 1;
- 
+    color:white;
 }
 
 .flex-information {   
@@ -288,9 +270,8 @@ a .icon:hover{
     font-size: 18px;
     text-transform: capitalize;
     min-width: 150px;
-    background-color: white;
     z-index: 1;
- 
+    color:white;
 }
 
 .flex-item1 {

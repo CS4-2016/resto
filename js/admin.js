@@ -64,7 +64,24 @@ window.dish = {
         $.get("manage-menu-dish.php?id="+c, function(ret){
             $(".flex-item1").html(ret); 
         });
-    }
+    },
+//    save: function(){
+//        var dish = $("#textDish").val();
+//        var price = $("#textPrice").val();
+//        var description = $("#textAddress").val();
+//        var dish_id = $("#hiddenDishId").val();
+//        var dish_image = $("#dishImage").val();
+//        
+//        $.post("change-dish-info.php",{
+//            dish_id: dish_id, 
+//            dish: dish, 
+//            price: price, 
+//            description: description,
+//            dish_image: dish_image
+//        }, function(ret) {
+//            alert(ret);
+//        });
+//    }
 }
 
 window.manage_orders = {
