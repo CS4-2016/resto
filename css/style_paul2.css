@@ -53,7 +53,7 @@
 .admin-sidebar-a:hover{
     color:white;
 }
-.user-item {
+.user-item, .order-item {
     padding: 10px;
     font-size: 18px;
     min-width: 150px;
