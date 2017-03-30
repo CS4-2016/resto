@@ -60,7 +60,42 @@ window.dish = {
             manage_menu.getAll();
         });
     },
-//    add: function(){
-//        
-//    }
+    view: function(c){
+        $.get("manage-menu-dish.php?id="+c, function(ret){
+            $(".flex-item1").html(ret); 
+        });
+    }
+}
+
+window.manage_orders = {
+    show: function (){
+        $.get("manage-orders.php",function(ret){
+            $('.content-wrapper').html(ret);
+            manage_orders.getAll();
+        });
+    },
+    getAll: function(){
+        $.get("manage-orders-list.php", function(ret){
+            $(".orders-wrapper").html(ret);
+        });
+    },
+    view: function(c){
+        $.get("manage-orders-view.php?id="+c, function(ret){
+            $(".user-info").html(ret); 
+        });
+    },
+    serve: function(c, btn){
+        $.get("manage-orders-serve.php?id="+c);
+        $("#btn-serve"+btn).addClass('btn-success').removeClass('btn-warning');
+        $("#btn-serve"+btn).html("Served");
+        $("#btn-cancel"+btn).remove();
+    },
+    cancel: function(c){
+        $.get("manage-orders-cancel.php?id="+c);
+        $("#td-cancel"+c).remove();
+    },
+    finish: function(){
+        var id = $("#hidden-tray-id").val();
+        $.get("manage-orders-finish.php?id="+id);
+    }
 }

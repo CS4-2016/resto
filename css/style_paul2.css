@@ -53,9 +53,19 @@
 .admin-sidebar-a:hover{
     color:white;
 }
-.user-item {
+.user-item, .order-item {
     padding: 10px;
     font-size: 18px;
     min-width: 150px;
     cursor:pointer;
+}
+
+#modalCategory {
+    z-index: 9999;
+}
+
+.modal{
+    margin-top:0px;
+    width:100%;
+    z-index:9999;
 }
