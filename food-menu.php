@@ -12,11 +12,10 @@
 <div class="menu-container">
   <div class="food-item">
       <div class="worko-tabs">
-
-  <input class="state" type="radio" title="tab-one" name="tabs-state" id="tab-one" checked />
-  <input class="state" type="radio" title="tab-two" name="tabs-state" id="tab-two" />
-  <input class="state" type="radio" title="tab-three" name="tabs-state" id="tab-three" />
-  <input class="state" type="radio" title="tab-four" name="tabs-state" id="tab-four" />
+          <input class="state" type="radio" title="tab-one" name="tabs-state" id="tab-one" checked />
+          <input class="state" type="radio" title="tab-two" name="tabs-state" id="tab-two" />
+          <input class="state" type="radio" title="tab-three" name="tabs-state" id="tab-three" />
+          <input class="state" type="radio" title="tab-four" name="tabs-state" id="tab-four" />
 
   <div class="tabs flex-tabs">
     <div class="menu-header">
