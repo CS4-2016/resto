@@ -14,7 +14,7 @@
 	$tray_id=$_SESSION['tray_id'];
 	$table_number=$_SESSION['table_number'];
 
-	$query="UPDATE orders SET tray_id='$tray_id', dish_name='$name', qty='$qty', price='$price' WHERE table_id='table_number'";
+	$query="UPDATE orders SET tray_id='$tray_id', dish_name='$name', qty='$qty', price='$price' WHERE table_id=table_number;";
 	$db->Query($query);
 
 	if($db->result){
