@@ -67,11 +67,21 @@ window.dish = {
     }
 }
 
-window.manage_order = {
+window.manage_orders = {
     show: function (){
-        $.get("manage-order.php",function(ret){
+        $.get("manage-orders.php",function(ret){
             $('.content-wrapper').html(ret);
-            //manage_order.getAll();
+            manage_orders.getAll();
         });
     },
+    getAll: function(){
+        $.get("manage-orders-list.php", function(ret){
+            $(".orders-wrapper").html(ret);
+        });
+    },
+    view: function(c){
+        $.get("manage-orders-view.php?id="+c, function(ret){
+            $(".user-info").html(ret); 
+        });
+    }
 }

@@ -31,7 +31,7 @@
     <ul>
       <li><span class="admin-navigation-span">NAVIGATION</span></li>
       <li><a class="admin-sidebar-a" onclick="manage_menu.show()">Manage Menu</a></li>
-      <li><a class="admin-sidebar-a" onclick="manage_order.show()">Manage Orders</a></li>
+      <li><a class="admin-sidebar-a" onclick="manage_orders.show()">Manage Orders</a></li>
       <li><a class="admin-sidebar-a" onclick="manage_users.show()">Manage Users</a></li>
       <li><a class="admin-sidebar-a" href="logout.php">Logout</a></li>
     </ul>
