@@ -13,6 +13,7 @@
             $orderList[] = $row;   
 ?>
 <input type="hidden" id="hidden-tray-id" value="<?php echo $id; ?>">
+
 <div class="header">
     Orders 
 </div>
@@ -26,7 +27,7 @@
       </tr>
     </thead>
     <tbody>
-        
+
         <?php for($x = 0; $x<count($orderList); $x++){ 
                 $menu_id = $orderList[$x]['menu_id'];
                 $SQL = "SELECT `name` FROM `menu` WHERE `id` = '$menu_id'"; 
@@ -51,7 +52,6 @@
                 </tr>
         <?php } ?>
     </tbody>
-  </table>
-
+</table>
     <center><button class="btn btn-primary" onclick="manage_orders.finish()">Finish Table</button></center>
 </article>
