@@ -26,11 +26,15 @@
 
 .admin-banner{
     width: 100%;
-    height: 30px;
+    height: 80px;
     font-family:'Rouge Script';
-    font-size: 30px;
+    font-size: 45px;
     padding:10px;
+    padding-top: 15px;
     text-align:center;
+    background-color: #e6b800;
+    border-right: 1px solid #c49d00;
+    border-bottom: 1px solid #c49d00;
 }
 
 .admin-header-el-siete{
@@ -40,14 +44,18 @@
 
 .admin-navigation-span{
     text-transform: uppercase;
-    height: 20px;
     width:100%;
+    color:white;
+    margin-top: 20px;
 }
 
 .admin-username-header{
     width:100%;
-    margin:0;
-    display:inline-block;
+    margin:auto;
+    text-align:center;
+    font-size: 15px;
+    padding-top: 15px;
+    color:#e6b800;
 }
 
 .admin-sidebar-a:hover{
@@ -69,3 +77,33 @@
     width:100%;
     z-index:9999;
 }
+
+.header{
+    background-color: #e6b800;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+header{
+    padding:0px;
+}
+
+.btn-el-siete{
+    color: #fff;
+    background-color: #e6b800;
+    border-color: #e6b800;
+}
+
+.btn-el-siete:hover{
+    background-color: #ffcc00;
+    color: #fff;
+    
+}
+
+.el-logout {
+    position:absolute;
+    height: 48px;
+    bottom:0px;
+    margin:auto;
+    border-top: 1px solid #333333;
+}
+

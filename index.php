@@ -30,7 +30,7 @@
                                 <input class="login-text-box" type="text" id="username" name="username" <?php if(!empty($_SESSION['login-attempt']) && $_SESSION['login-attempt'] == 'username'){ echo "value='".$_SESSION['username-attempt']."'"; }?>>
                                 <label style="margin-top: 15px;" for="password"><i class="fa fa-key"></i> Password</label>
                                 <input class="login-text-box login-password-text-box" type="password" id="password" name="password"><i class="fa fa-eye show-off" id="showPassword"></i>
-                                <a href="forgot-password.php">Forgot password?</a>
+                                <a href="forgot-password.php" style="color:#e6b800;">Forgot password?</a>
                                 <?php if(!empty($_SESSION['login-attempt']) && $_SESSION['login-attempt'] == 'username'){ ?>
                                     <span class="login-error">Password is incorrect.</span>
     <?php 

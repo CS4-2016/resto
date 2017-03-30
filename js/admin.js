@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    setInterval(function(){
-        manage_menu.getAll();
-    },5000);
+//    setInterval(function(){
+//        manage_menu.getAll();
+//    },5000);
 });
 
 window.manage_menu = {
@@ -39,6 +39,8 @@ window.manage_users = {
 
 window.category = {
     getAll: function(c){
+        $(".dish").html('');
+        $(".flex-item1").html('');
         $.get("manage-menu-category-get-dish.php?category="+ c, function(ret){
             $(".dish").html(ret);
         })
@@ -50,6 +52,9 @@ window.category = {
             $(".category-wrapper").append(ret);
         });
         manage_menu.getAll();
+    },
+    delete: function(c){
+        
     }
 }
 
@@ -64,7 +69,30 @@ window.dish = {
         $.get("manage-menu-dish.php?id="+c, function(ret){
             $(".flex-item1").html(ret); 
         });
+    },
+    add: function(){
+        var c = $('#add_dish').val();
+        $.get("manage-menu-dish-add.php?dish="+c, function(ret){
+            $(".dish-wrapper").append(ret);
+        });
     }
+//    save: function(){
+//        var dish = $("#textDish").val();
+//        var price = $("#textPrice").val();
+//        var description = $("#textAddress").val();
+//        var dish_id = $("#hiddenDishId").val();
+//        var dish_image = $("#dishImage").val();
+//        
+//        $.post("change-dish-info.php",{
+//            dish_id: dish_id, 
+//            dish: dish, 
+//            price: price, 
+//            description: description,
+//            dish_image: dish_image
+//        }, function(ret) {
+//            alert(ret);
+//        });
+//    }
 }
 
 window.manage_orders = {

@@ -49,14 +49,8 @@
          <a href="#"><h2>Log Out</h2>
              <div class="icon"><i class="fa fa-sign-out fa-4x" aria-hidden="true"></i></div></a>
       </div>
-    </div>
-
-    
-
-    
-
+      </div>
   </main>
-
 </div>
   
   
