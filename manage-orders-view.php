@@ -13,7 +13,6 @@
         while($row = $db->result->fetch_assoc())
             $orderList[] = $row;   
 ?>
-
 <div class="header">
     Orders 
 </div>
@@ -27,7 +26,7 @@
       </tr>
     </thead>
     <tbody>
-        
+
         <?php for($x = 0; $x<count($orderList); $x++){ 
                 $menu_id = $orderList[$x]['menu_id'];
                 $SQL = "SELECT `name` FROM `menu` WHERE `id` = '$menu_id'"; 
@@ -43,13 +42,14 @@
                         <?php if($orderList[$x]['status'] == 'not_yet_served'){ ?>
                             <center><button onclick="manage_orders.serve(<?php echo $orderList[$x]['id']; ?>)" style="text-align: center;" class="btn btn-warning">Serve</button>
                             &nbsp;&nbsp;
-                            <button onclick="manage_orders.cancel(<?php echo $orderList[$x]['id']; ?>)" class="btn btn-danger">Cancel</button></td></center>
+                            <button onclick="manage_orders.cancel(<?php echo $orderList[$x]['id']; ?>)" class="btn btn-danger">Cancel</button>
                         <?php } 
                               else if($orderList[$x]['status'] == 'served'){ ?>
                             <center><button class="btn btn-success">Served</button></center>
                         <?php } ?>
+                     </td></center>
                 </tr>
         <?php } ?>
     </tbody>
   </table>
-</article>
+
