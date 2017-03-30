@@ -18,13 +18,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <?php
-        require_once("head.php")
-    ?>
-    <link rel="stylesheet" href="css/style_godfrey.css">
+	<?php
+		require_once("head.php")
+	?>
+	<link rel="stylesheet" href="css/style_godfrey.css">
 
 </head>
 <body>
+
+<?php
+	$table_number=$_GET['table_number'];
+
+	$sql="INSERT INTO orders(table_id) VALUES('$table_number')";
+	$db->Query($sql);
+
+	$sql="INSERT INTO trays(table_id,status) VALUES('$table_number','not_yet_purchased')";
+	$db->Query($sql);
+
+	if($db->result)
+	{
+		$tray_id=$db->conn->insert_id;
+		$query="UPDATE tables SET tray_id='$tray_id', status='occupied' WHERE table_number='$table_number'";
+		$db->Query($query);
+	}
+?>
 
 <div class="menu-container">
   <div class="food-item">
@@ -44,693 +61,191 @@
         <label for="tab-four" id="tab-four-label" class="tab">Dessert</label> -->
     </div>
 
-    <div id="tab-one-panel" class="panel active">
-    <header>
-            <div class="food-menu">
-                <img src="img/l_14004_avocado-salsa-cinnamon.jpg" alt id="myImg">
-                    <div class="food-name">
-                        <p class='description_content'>AVOCADO SALSA WITH GINGER AND GARLIC
-                            <span class="currency">&#8369;250</span>
-                        </p>       
-                    </div>
-               <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                        <img class="modal-content" id="img01">
-                    <div class="food-description">
-                        <p class='description_food'>Food Description</p>
-                    </div> 
-                        <div class="food-price">
-                            <p class='description_price'> &#8369;250</p>
-                        </div> 
-  
-                </div>
-                
-            </div>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14572_jar-spinach-spread.jpg" alt id="myImg">
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SPINACH DIP
-                               <span class="currency">&#8369;150</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-         <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14519_sweet-sour-dip-shrimp-crackers.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SWEET AND SOUR DIPPING SAUCE WITH KRUPUK 
-                               <span class="currency">&#8369;350</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-         <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14004_avocado-salsa-cinnamon.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>AVOCADO SALSA WITH GINGER AND GARLIC
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14572_jar-spinach-spread.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SPINACH DIP
-                               <span class="currency">&#8369;150</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-         <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14519_sweet-sour-dip-shrimp-crackers.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SWEET AND SOUR DIPPING SAUCE WITH KRUPUK 
-                               <span class="currency">&#8369;350</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-         <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14004_avocado-salsa-cinnamon.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>AVOCADO SALSA WITH GINGER AND GARLIC
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14572_jar-spinach-spread.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SPINACH DIP
-                               <span class="currency">&#8369;150</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-         <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14519_sweet-sour-dip-shrimp-crackers.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SWEET AND SOUR DIPPING SAUCE WITH KRUPUK 
-                               <span class="currency">&#8369;350</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-         <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14004_avocado-salsa-cinnamon.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>AVOCADO SALSA WITH GINGER AND GARLIC
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14572_jar-spinach-spread.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SPINACH DIP
-                               <span class="currency">&#8369;150</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-         <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14519_sweet-sour-dip-shrimp-crackers.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SWEET AND SOUR DIPPING SAUCE WITH KRUPUK 
-                               <span class="currency">&#8369;350</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-         <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14004_avocado-salsa-cinnamon.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>AVOCADO SALSA WITH GINGER AND GARLIC
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14572_jar-spinach-spread.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SPINACH DIP
-                               <span class="currency">&#8369;150</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-         <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14519_sweet-sour-dip-shrimp-crackers.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SWEET AND SOUR DIPPING SAUCE WITH KRUPUK 
-                               <span class="currency">&#8369;350</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-  <!-- images placed inside block elements to deal with a Firefox rendering bug affecting  scaled flexbox images -->
-</header>
-    </div>
-    <div id="tab-two-panel" class="panel">
-      <header>
-            <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14610_irish-guinness-stew-lamb.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>GUINNESS IRISH STEW WITH LAMB
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14520_spicy-scallop-potato-soup.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SPICY POTATO SOUP WITH SCALLOPS
-                               <span class="currency">&#8369;150</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-          <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14610_irish-guinness-stew-lamb.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>GUINNESS IRISH STEW WITH LAMB
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14520_spicy-scallop-potato-soup.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SPICY POTATO SOUP WITH SCALLOPS
-                               <span class="currency">&#8369;150</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-         <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14519_sweet-sour-dip-shrimp-crackers.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SWEET AND SOUR DIPPING SAUCE WITH KRUPUK 
-                               <span class="currency">&#8369;350</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-         <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14004_avocado-salsa-cinnamon.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>AVOCADO SALSA WITH GINGER AND GARLIC
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14572_jar-spinach-spread.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SPINACH DIP
-                               <span class="currency">&#8369;150</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-         <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14519_sweet-sour-dip-shrimp-crackers.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SWEET AND SOUR DIPPING SAUCE WITH KRUPUK 
-                               <span class="currency">&#8369;350</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-         <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14004_avocado-salsa-cinnamon.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>AVOCADO SALSA WITH GINGER AND GARLIC
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14572_jar-spinach-spread.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SPINACH DIP
-                               <span class="currency">&#8369;150</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-         <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14519_sweet-sour-dip-shrimp-crackers.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SWEET AND SOUR DIPPING SAUCE WITH KRUPUK 
-                               <span class="currency">&#8369;350</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-         <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14004_avocado-salsa-cinnamon.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>AVOCADO SALSA WITH GINGER AND GARLIC
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14572_jar-spinach-spread.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SPINACH DIP
-                               <span class="currency">&#8369;150</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-         <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14519_sweet-sour-dip-shrimp-crackers.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SWEET AND SOUR DIPPING SAUCE WITH KRUPUK 
-                               <span class="currency">&#8369;350</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-  <!-- images placed inside block elements to deal with a Firefox rendering bug affecting  scaled flexbox images -->
-</header>
-    </div>
-    <div id="tab-three-panel" class="panel">
-        <header>
-            <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14685_strawberry-lemonade-basil.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>STRAWBERRY LEMONADE WITH BASIL
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-            <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14667_spinach-smoothies.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SPINACH AND APPLE SMOOTHIE
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-            <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14682_cucumber-margarita-glass.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>CUCUMBER MARGARITA
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14621_avender-ginger-lemonade.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>LAVENDER GINGER LEMONADE
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-            <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14685_strawberry-lemonade-basil.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>STRAWBERRY LEMONADE WITH BASIL
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-            <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14667_spinach-smoothies.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SPINACH AND APPLE SMOOTHIE
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-            <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14682_cucumber-margarita-glass.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>CUCUMBER MARGARITA
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14621_avender-ginger-lemonade.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>LAVENDER GINGER LEMONADE
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-            <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14685_strawberry-lemonade-basil.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>STRAWBERRY LEMONADE WITH BASIL
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-            <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14667_spinach-smoothies.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>SPINACH AND APPLE SMOOTHIE
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-            <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14682_cucumber-margarita-glass.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>CUCUMBER MARGARITA
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14621_avender-ginger-lemonade.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>LAVENDER GINGER LEMONADE
-                               <span class="currency">&#8369;250</span>
-                            </p>
-                            
-                    </div>
-                </a>
-            </div>
-        </header>
-    </div>
-    <div id="tab-four-panel" class="panel">
-        <header>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14621_avender-ginger-lemonade.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>CHOCOLATE ICE CREAM SANDWICHES
-                               <span class="currency">&#8369;250</span>
-                            </p>  
-                    </div>
-                </a>
-            </div>
-              <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14641_ice-cream-sandwiches--2-.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>DONUT ICE CREAM SANDWICH
-                               <span class="currency">&#8369;250</span>
-                            </p>  
-                    </div>
-                </a>
-            </div>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14002_elderflower-jelly.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>ELDERFLOWER JELLY
-                               <span class="currency">&#8369;250</span>
-                            </p>  
-                    </div>
-                </a>
-            </div>
-            <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14621_avender-ginger-lemonade.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>CHOCOLATE ICE CREAM SANDWICHES
-                               <span class="currency">&#8369;250</span>
-                            </p>  
-                    </div>
-                </a>
-            </div>
-              <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14641_ice-cream-sandwiches--2-.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>DONUT ICE CREAM SANDWICH
-                               <span class="currency">&#8369;250</span>
-                            </p>  
-                    </div>
-                </a>
-            </div>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14002_elderflower-jelly.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>ELDERFLOWER JELLY
-                               <span class="currency">&#8369;250</span>
-                            </p>  
-                    </div>
-                </a>
-            </div>
-            <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14621_avender-ginger-lemonade.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>CHOCOLATE ICE CREAM SANDWICHES
-                               <span class="currency">&#8369;250</span>
-                            </p>  
-                    </div>
-                </a>
-            </div>
-              <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14641_ice-cream-sandwiches--2-.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>DONUT ICE CREAM SANDWICH
-                               <span class="currency">&#8369;250</span>
-                            </p>  
-                    </div>
-                </a>
-            </div>
-             <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14002_elderflower-jelly.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>ELDERFLOWER JELLY
-                               <span class="currency">&#8369;250</span>
-                            </p>  
-                    </div>
-                </a>
-            </div>
-            <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14002_elderflower-jelly.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>ELDERFLOWER JELLY
-                               <span class="currency">&#8369;250</span>
-                            </p>  
-                    </div>
-                </a>
-            </div>
-            <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14002_elderflower-jelly.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>ELDERFLOWER JELLY
-                               <span class="currency">&#8369;250</span>
-                            </p>  
-                    </div>
-                </a>
-            </div>
-            <div class="food-menu">
-                <a href="#">
-                    <img src="img/l_14002_elderflower-jelly.jpg" alt>
-                
-                    <div class="food-name">
-                        	<p class='description_content'>ELDERFLOWER JELLY
-                               <span class="currency">&#8369;250</span>
-                            </p>  
-                    </div>
-                </a>
-            </div>
-        </header>
-    </div>
-  </div>
+							if($db->result)
+							{
+								while($row=$db->result->fetch_assoc())
+								{
+									$name=$row['name'];
+									$price=$row['price'];
+						?>
+						<div class="food-menu">
+							<img src="menu-img/<?php echo $row['photo']; ?>" alt id="myImg<?php echo $row['id']; ?>">
+							<div class="food-name">
+								<p class='description_content'><?php echo $row['name']; ?>
+									<a href="javascript: void(0)" onclick="add_to_cart(<?php echo $row['id']; ?>, <?php echo $tray_id; ?>, <?php echo $table_number; ?>)" class="cd-add-to-cart" data-price="<?php $row['price']; ?>"><br><button type="button" class="btn btn-primary add-tray">&#xf067; Add to Tray</button></a>
+									<span class="currency">&#8369;<?php echo $row['price']; ?></span>
+								</p>
+							</div>
+							<div id="myModal<?php echo $row['id']; ?>" class="modal">
+								<span class="close">&times;</span>
+								<img class="modal-content" id="img01">
+								<div id="caption"><?php echo $row['description']; ?></div>
+							</div>
+						</div>
+						<?php
+								}
+							}
+						?>
+					</header>
+				</div>
+				
+				<div id="tab-two-panel" class="panel">
+					<header>
+						<?php
+							$sql="SELECT * FROM menu WHERE category='Main Course'";
+							$db->Query($sql);
 
+							if($db->result)
+							{
+								while($row=$db->result->fetch_assoc())
+								{
+									$name=$row['name'];
+									$price=$row['price'];
+						?>
+						<div class="food-menu">
+							<img src="menu-img/<?php echo $row['photo']; ?>" alt id="myImg<?php echo $row['id']; ?>">
+							<div class="food-name">
+								<p class='description_content'><?php echo $row['name']; ?>
+									<a href="javascript: void(0)" onclick="add_to_cart(<?php echo $row['id']; ?>, <?php echo $tray_id; ?>, <?php echo $table_number; ?>)" class="cd-add-to-cart" data-price="<?php $row['price']; ?>"><br><button type="button" class="btn btn-primary add-tray">&#xf067; Add to Tray</button></a>
+									<span class="currency">&#8369;<?php echo $row['price']; ?></span>
+								</p>
+							</div>
+							<div id="myModal<?php echo $row['id']; ?>" class="modal">
+								<span class="close">&times;</span>
+								<img class="modal-content" id="img01">
+								<div id="caption"><?php echo $row['description']; ?></div>
+							</div>
+						</div>
+						<?php
+								}
+							}
+						?>
+					</header>
+				</div>
+				<div id="tab-three-panel" class="panel">
+					<header>
+						<?php
+							$sql="SELECT * FROM menu WHERE category='Beverage'";
+							$db->Query($sql);
+
+							if($db->result)
+							{
+								while($row=$db->result->fetch_assoc())
+								{
+									$name=$row['name'];
+									$price=$row['price'];
+						?>
+						<div class="food-menu">
+							<img src="menu-img/<?php echo $row['photo']; ?>" alt id="myImg<?php echo $row['id']; ?>">
+							<div class="food-name">
+								<p class='description_content'><?php echo $row['name']; ?>
+									<a href="javascript: void(0)" onclick="add_to_cart(<?php echo $row['id']; ?>, <?php echo $tray_id; ?>, <?php echo $table_number; ?>)" class="cd-add-to-cart" data-price="<?php $row['price']; ?>"><br><button type="button" class="btn btn-primary add-tray">&#xf067; Add to Tray</button></a>
+									<span class="currency">&#8369;<?php echo $row['price']; ?></span>
+								</p>
+							</div>
+							<div id="myModal<?php echo $row['id']; ?>" class="modal">
+								<span class="close">&times;</span>
+								<img class="modal-content" id="img01">
+								<div id="caption"><?php echo $row['description']; ?></div>
+							</div>
+						</div>
+						<?php
+								}
+							}
+						?>
+					</header>
+				</div>
+				<div id="tab-four-panel" class="panel">
+					<header>
+						<?php
+							$sql="SELECT * FROM menu WHERE category='Dessert'";
+							$db->Query($sql);
+
+							if($db->result)
+							{
+								while($row=$db->result->fetch_assoc())
+								{
+									$name=$row['name'];
+									$price=$row['price'];
+						?>
+						<div class="food-menu">
+							<img src="menu-img/<?php echo $row['photo']; ?>" alt id="myImg<?php echo $row['id']; ?>">
+							<div class="food-name">
+								<p class='description_content'><?php echo $row['name']; ?>
+									<a href="javascript: void(0)" onclick="add_to_cart(<?php echo $row['id']; ?>, <?php echo $tray_id; ?>, <?php echo $table_number; ?>)" class="cd-add-to-cart" data-price="<?php $row['price']; ?>"><br><button type="button" class="btn btn-primary add-tray">&#xf067; Add to Tray</button></a>
+									<span class="currency">&#8369;<?php echo $row['price']; ?></span>
+								</p>
+							</div>
+							<div id="myModal<?php echo $row['id']; ?>" class="modal">
+								<span class="close">&times;</span>
+								<img class="modal-content" id="img<?php echo $row['id']; ?>">
+								<div id="caption"><?php echo $row['description']; ?></div>
+							</div>
+						</div>
+						<?php
+								}
+							}
+						?>
+					</header>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="order-item">
+			<div class="header">
+				Table #<?php echo $_GET['table_number']; ?>:
+			</div>
+		<form action="food-menu2.php" method="post">
+			<div class="item-order">
+				
+			</div>
+			<center><input type="submit" value="Place Order" class="btn-placeorder"></center>
+		</form>
+	</div>
 </div>
-    </div>
+	
+	<?php require_once("scripts.php"); ?>
+	<script type="text/javascript" src="js/food-menu.js"></script>
 
-  <div class="order-item">
-        <div class="header">
-            Table #:
-        </div>
-            <div class="item-order">
-          
-            </div>
-             <center><input type="submit" value="Place Order" class="btn-placeorder"></center>
-     
-    </div> 
-</div>
-    </body>
-    <script>
-// Get the modal
-var modal = document.getElementById('myModal');
+	<script>
+		$(function(){
+			reloadCart();
+		});
+		function add_to_cart(id,tray_id,table_number){
+			$.post('items-order-get.php', {id: id, tray_id:tray_id, table_number: table_number}, function(o){
+				reloadCart();
+			});
+		}
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
+		function reloadCart(){
+			$.post('items-order-view.php', {}, function(o){
+				$(".item-order").html(o);
+			});
+		}
+	</script>
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+	<script>
+		// Get the modal
+		var modal = document.getElementById('myModal1');
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById('myImg1');
+		var modalImg = document.getElementById("img1");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+	</script>
+</body>
 </html>

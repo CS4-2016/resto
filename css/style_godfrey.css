@@ -677,6 +677,63 @@ p.description_content{
         width: 100%;
     }
 }
+
+.add-tray{
+    color: black;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 0;
+    padding-right: 5px;
+    padding-bottom: 0;
+      font-family: FontAwesome;
+}
+
+.cd-cart-container{
+  color: black;
+}
+
+.cd-cart{
+  color: black;
+}
+
+.undo{
+  width: 100%;
+  font-family: FontAwesome;
+}
+
+a.undo{
+  color: green;
+}
+
+.item{
+  width: 100%;
+}
+
+.quantity{
+  float: left;
+}
+
+.price{
+  margin-left: 46%;
+}
+
+.delete-item{
+  float: right;
+  font-family: FontAwesome;
+  color: red;
+}
+
+.product-name{
+  color: black;
+  font-size: 20px;
+}
+
+li.product{
+  border-bottom: 2px solid black;
+  width: 110%;
+  padding: 5%;
+}
+
 /*
 ** Media Queries
 ***********************************************************/

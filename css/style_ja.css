@@ -21,6 +21,26 @@ body{
 	display: inline-flex;
 }
 
+.occupied{
+	background-color: #ffb6c1;
+}
+
+.unoccupied{
+	background-color: #ccccff;
+}
+
 .reserved{
-	background-color: #fee;
+	background-color: #ffff99;
+}
+
+.table-link{
+	text-decoration: none;
+	color: #000;
+	text-align: center;
+}
+
+.table-link:hover{
+	text-decoration: none;
+	color: #000;
+	text-align: center;
 }
