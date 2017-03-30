@@ -84,8 +84,18 @@ window.manage_orders = {
             $(".user-info").html(ret); 
         });
     },
-    serve: function(c){
+    serve: function(c, btn){
         $.get("manage-orders-serve.php?id="+c);
-        manage_orders.view();
+        $("#btn-serve"+btn).addClass('btn-success').removeClass('btn-warning');
+        $("#btn-serve"+btn).html("Served");
+        $("#btn-cancel"+btn).remove();
+    },
+    cancel: function(c){
+        $.get("manage-orders-cancel.php?id="+c);
+        $("#td-cancel"+c).remove();
+    },
+    finish: function(){
+        var id = $("#hidden-tray-id").val();
+        $.get("manage-orders-finish.php?id="+id);
     }
 }
