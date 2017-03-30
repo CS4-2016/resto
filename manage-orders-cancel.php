@@ -6,9 +6,7 @@
     $db->Connect();
 
     $id = $_GET['id'];
-    $SQL = "UPDATE `orders` SET `status` = 'served' WHERE `id` = '$id'";
+    $SQL = "DELETE FROM `orders` WHERE `id` = '$id'";
     
     $db->Query($SQL);
-
-    
 ?>
